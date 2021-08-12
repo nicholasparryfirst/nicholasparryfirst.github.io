@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/*
+@font-face {
+  src:url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&display=swap');
+  font-family:"Hahmlet";
+} */
+
+audio[controls] {
+  float:right;
+  display:inline-block;
+  margin-right: 25px;
+}
+
+video {
+  width:100%;
+  border:2px solid black;
+}
+
+header {
+  background:url(../assets/image/backgrounds/marble_2048-1347.jpg) top left repeat;
+  height:200px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  float:left;
+  padding-top: 50px;
+  margin-left: 25px;
+  color:black;
+}
+
+header button {
+  float:right;
+  margin-right: 25px;
+  margin-top:50px;
+  background-color: black;
+  padding: 10px 15px ;
+}
+
+header button:hover {
+    background-color: rgb(227, 120, 52);
+    border: 2px solid black;
+}
+
+header a {
+  color:white;
+}
+
+footer p {
+  font-size: 10px;
+  color:black;
+}
+
+footer .pLeft {
+  margin-left: 25px;
+  float:left;
+}
+
+footer .pRight {
+  margin-right: 25px;
+  float:right;
+}
+
+footer {
+  border:2px solid black;
+  height:50px;
+  background-color: rgb(227, 120, 52);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+h1 {
+  font-family: "Hahmlet", sans-serif;
+  margin-left: 25px;
+}
+
+h3 {
+  font-family:Hahmlet;
+}
+
+* {
+  font-family: "Open Sans";
+}
+
+body {
+  background-color: black;
+  color:white;
+}
+
+nav {
+  background-color: rgb(227, 120, 52);
+  margin-top: 10px;
+}
+
+nav a {
+  padding-left: 25px;
+  padding-top: 10px ;
+  padding-bottom: 10px;
+  display: inline-block;
+  color:white;
+  font-style: italic;
+}
+
+nav a:hover {
+  color:black;
+}
+
+/* CSS for Hero */
+    .indexHero {
+        margin: 0px;
+    }
+
+    .indexHero h1 {
+      box-sizing: border-box;
+      font-size: 50px;
+    }
+
+    .heroImage {
+      height:500px;
+      background-image:url('../assets/image/backgrounds/tree_in_field.jpg');
+      background-size: cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+
+    .heroText {
+      text-align:center;
+      position:absolute;
+      top:200px;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .heroButton {
+      background-color: white;
+      border: 2px solid rgb(62, 81, 119);
+      color:rgb(62, 81, 119);
+      padding:10px 15px;
+    }
+
+    .heroButton:hover {
+      background-color:rgb(62, 81, 119);
+      border: 2px solid white;
+      color:white;
+      cursor:pointer;
+    }
+/* End CSS for Hero */
+
+.audioDiv {
+  height:150px;
+}
+
+.audioDiv a {
+    color:white;
+    float:left;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.informationSection {
+  border:2px solid black;
+  padding:15px;
+  margin-top: 20px;
+  /* Old Background-image code */
+  /*
+  background-image: url("../assets/image/backgrounds/marble_2048-1347.jpg");
+  background-size: 500px 500px;
+  */
+  /* New Background code */
+  background:  url(../assets/image/Radial_Small.png) right top/150px 150px no-repeat, url(../assets/image/backgrounds/marble_2048-1347.jpg) top left repeat;
+}
+
+.informationSection img {
+  height:200px;
+  width:200px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 25px;
+  border-radius: 50%;
+  border:2px solid rgb(227, 120, 52);
+  box-shadow: 2px 2px 2px 2px lightgrey;
+}
+
+.informationSection h3 {
+  font-family: Hahmlet;
+  text-align: center;
+  color:rgb(227, 120, 52);
+  clear:right;
+}
+
+.informationSection p {
+  color:black;
+  margin-top: 20px;
+}
+
+/* Dopdown Button Section */
+    .dropdown {
+      position:relative;
+      bottom:200px;
+      margin-left: 25px;
+      display:inline-block;
+    }
+    .dropdown button {
+      background-color:rgb(227, 120, 52);
+      color:black;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+    .dropdown button:hover {
+      color:white;
+    }
+    .dropdownContent {
+      position:absolute;
+      display:none;
+      background-color: lightgrey;
+      min-width:150px;
+      border:2px solid black;
+    }
+    .dropdownContent a {
+      color:white;
+      padding: 10px;
+      display:block;
+    }
+    .dropdownContent a:hover {
+      background-color:white;
+      color:rgb(227, 120, 52);
+    }
+    .dropdown:hover .dropdownButton {
+
+    }
+    .dropdown:hover .dropdownContent {
+      display:block;
+      background-color:black;
+    }
+
+/* End Dropdown Button Section*/
+
+/* loading bar render */
+.rollingLoader {
+  border: 15px solid white;
+  border-top:15px solid rgb(227, 120, 52);
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  display:inline-block;
+  margin-left: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Parallax render */
+
+.parallax {
+  background-image:url('../assets/image/heron.png');
+  min-height: 200px;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.contentContainer {
+  min-height:300px;
+  border: 2px solid #6699CC;
+  padding:25px;
+}
+
+.contentContainer a {
+  display:block;
+  padding: 10px 15px;
+  color:red;
+}
