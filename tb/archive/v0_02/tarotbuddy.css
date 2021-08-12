@@ -1,0 +1,219 @@
+      @font-face {
+      font-family: "UbuntuMono";
+      src: url("./resources/fonts/UbuntuMono-R.ttf") format("TrueType");
+      font-weight: normal;
+      font-style: normal;
+      }
+      @font-face {
+      font-family: "UbuntuMonoBold";
+      src: url("./resources/fonts/UbuntuMono-B.ttf") format("TrueType");
+      font-weight: bold;
+      font-style: bold;
+      }
+
+* {
+  font-family: UbuntuMono;
+  color: #FFF;
+}
+
+.siteBackground {
+  background-image: url("./resources/images/tb_starry_background.png");
+  background-position: center top;
+  height: 1200px;
+  background-color: #000;
+}
+
+.mainContainer {
+  padding: 25px;
+  border: 5px solid #FFF;
+  margin: auto;
+  width: 600px;
+  background-color: #000;
+
+}
+
+.titleBox {
+  align-content: center;
+  margin: auto;
+  border: 5px solid #fcb92f;
+  background-color: #000;
+  padding: 25px;
+}
+
+.titleBox img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.titleBox p  {
+  text-align: center;
+  font-family: UbuntuMono;
+  color:#f28357;
+}
+
+.headerTitle {
+
+
+}
+
+.readVer {
+
+
+}
+
+.buttonBox {
+
+  margin: auto;
+  padding: 25px;
+  border: 5px solid #fcb92f;
+
+}
+.centerContainer{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 80%;
+}
+
+.mainButton {
+  background-color: #fcb924;
+  border: none;
+  color: #000;
+  padding: 15px 30px;
+  font-family: UbuntuMonoBold;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.mainButton:hover {
+  color: #FFF;
+  border: 5px solid #fff;
+  padding: 10px 25px;
+}
+
+.renderingField {
+  margin: auto;
+  padding: 25px;
+  width: 540px;
+  height: 540px;
+  background-color: #000;
+  border: 5px solid #fcb92f;
+
+}
+
+
+.leftContainer {
+  position: static;
+  float: left;
+  top: 0px;
+  left: 0px;
+  padding:25px;
+  border: 5px solid #fcb92f;
+  width: 180px;
+  height: 350px;
+
+}
+
+.rightContainer {
+  position: static;
+  float: left;
+  margin-left: 25px;
+  top: 0px;
+  right: 0px;
+  padding:25px;
+  border: 5px solid #fcb92f;
+  width: 215px;
+  height: 350px;
+}
+
+.rightContainer h6 {
+  color: #f28357;
+}
+.rightContainer p {
+  font-size: 10px;
+}
+
+.bottomContainer {
+  float: left;
+  position: relative;
+  border: 5px solid #fcb92f;
+  margin-top: 25px;
+  left: 0px;
+  top: 0;
+  width: 530px;
+  height: 100px;
+}
+
+.dynamicButton {
+  position: relative;
+  float:left;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: #fcb924;
+  border: none;
+  color: #000;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  font-family: UbuntuMono;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.dynamicButton:hover{
+  border: 5px solid #FFF;
+  padding: 5px;
+}
+
+.dynamicMbpButton {
+  position: relative;
+  float:left;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: #fcb924;
+  border: none;
+  color: #000;
+  height: 100px;
+  width: 130px;
+  padding: 10px;
+  font-family: UbuntuMono;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.dynamicMbpButton:hover{
+  border: 5px solid #FFF;
+  padding: 5px;
+}
+
+.nameField {
+  text-align: center;
+  color: #f28357;
+}
+
+.nameRend {
+  color: #f28357;
+}
+
+.nameRend:hover{
+  color: #fcb92f;
+}
+
+.imageField {
+  position: static;
+  top: 0px;
+  left: 0px;
+  padding: 25px;
+  width: 125px;
+  height: 200px;
+  border: 5px solid #FFF;
+}
+
+.imageField:hover {
+  border: 5px solid #fcb92f;
+}
