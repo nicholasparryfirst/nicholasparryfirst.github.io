@@ -33,6 +33,11 @@ margin-bottom: 15px;
 height:100px;
 background-color: black;
 border:2px solid #fcb92f;
+color:white;
+}
+
+header h1 {
+  margin
 }
 
 main {
@@ -47,13 +52,27 @@ main {
   text-indent: 50px;
 }
 
+footer {
+  height: 100px;
+  background-color: #fcb92f;
+  color:white;
+}
+
 /* button and div element definition (classed) */
 .headerButtonLeft,.headerButtonRight {
+  box-sizing: border-box;
   height:90px;
   width: 90px;
   background-color: #fcb92f;
   margin-top: 5px;
   color:black;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.headerButtonLeft:hover,.headerButtonRight:hover {
+  color:white;
+  border: 2px solid white;
 }
 
 .headerButtonLeft {
@@ -64,4 +83,13 @@ main {
 .headerButtonRight {
   margin-right: 5px;
   float:right;
+}
+
+.mainButton {
+  height:90px;
+  width: 180px;
+  background-color: #fcb92f;
+  color:black;
+  text-align: center;
+  padding-top: 45px;
 }
