@@ -22,7 +22,10 @@
       <li>Salt</li>
       <li>Chili</li>
       <li>Poblano</li>
+      <li id="uadd"></li>
     </ul>
+
+    <hr/>
 
     <h3>Things To Avoid:</h3>
       <ul>
@@ -32,6 +35,14 @@
         <li class="strike">Hot Chip</li>
         <li class="strike">Lies</li>
       </ul>
+
+      <hr/>
+      <br/>
+      <form onsubmit="return writeToList(uadd)">
+        <label for="obj">Add an item:</label>
+        <input type="text" name="obj" id="addItem"/>
+        <input type="submit" name="submit"/>
+      </form>
     </main>
   </body>
 </html>
