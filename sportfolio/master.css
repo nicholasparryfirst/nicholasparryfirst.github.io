@@ -24,7 +24,6 @@ overflow: hidden;
 
 aside {
   float:left;
-  margin-top: 0px;
   height:80vh;
   width:35%;
   border-right:5px solid black;
@@ -148,4 +147,12 @@ aside h6:hover {
 ul li:hover {
   color:#F79868;
   cursor:pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 500px) {
+ aside {
+  border-bottom: 5px solid black;
+  width:100%;
+ }
 }
