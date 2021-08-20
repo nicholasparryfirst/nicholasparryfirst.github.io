@@ -95,7 +95,6 @@ footer {
 }
 
 aside nav {
-  word-wrap: break-word;
   margin-left: 2.5vw;
   margin-right: 2.5vw;
 }
@@ -145,7 +144,61 @@ aside h6:hover {
   cursor:pointer;
 }
 
-ul li:hover {
+nav li:hover, nav h5:hover {
   color:#F79868;
   cursor:pointer;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:500px) {
+  header {
+    margin: 0px;
+ }
+  .headerTitle {
+    float:none;
+  }
+  .headerTitle h1 {
+    text-align: center;
+  }
+  .headerInfo {
+    text-align: center;
+    float:none;
+  }
+  .headerInfo p {
+    display:none;
+  }
+  aside {
+    border-bottom: 5px solid black;
+    border-right: none;
+    width:100%;
+    height:auto;
+  }
+  aside h6 {
+    display:none;
+  }
+  .SPLogo {
+    display:inline;
+    float:left;
+    max-width: 100px;
+    margin:5vw 5vw;
+  }
+  nav h5 {
+    float:right;
+    clear:right;
+    margin-right: 5vw;
+    margin-top: 5vw;
+    font-size: 12px;
+  }
+  ul>li {
+    display:none;
+    float:right;
+    clear:right;
+    font-size: 12px;
+    margin-right: 5vw;
+  }
+
+  nav>ul>li {
+    text-align: right;
+  }
 }
