@@ -83,10 +83,15 @@ footer {
 
 .SPLogo {
   width:75%;
-  padding:2.5vh 2.5vw;
+  max-width: 200px;
+  margin:2.5vh 2.5vw;
   display:block;
   margin-left: auto;
   margin-right: auto;
+  transform:scale(120%, 120%);
+  border-radius: 50%;
+  border: 5px solid white;
+
 }
 
 aside nav {
@@ -107,7 +112,38 @@ nav ul ul li {
   padding: 5px 0px;
 }
 
+/* Footer */
+
+.footerRight {
+  writing-mode:vertical-rl;
+  text-align: center;
+  float:right;
+  border-left:5px solid black;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  height:100%;
+}
+
+/************** Typography ***********/
+
+aside h6 {
+  margin-top: 0px;
+  text-align: center;
+  color:white;
+}
+
 /************** Hover ***************/
+
+.SPLogo:hover {
+  border-radius: 50%;
+  border: 5px solid #F79868;
+  cursor:pointer;
+}
+
+aside h6:hover {
+  color:lightgrey;
+  cursor:pointer;
+}
 
 ul li:hover {
   color:#F79868;
