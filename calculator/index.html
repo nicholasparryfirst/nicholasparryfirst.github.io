@@ -3,20 +3,21 @@
   <head>
     <style media="screen">
       main {
-        width:75%;
+        width:80%;
         margin:auto;
         text-align:center;
         font-family:Helvetica,Futura,sans-serif;
       }
       button {border:2px solid black;font-weight:bold;padding:0.5em;border-radius:5px;}
       button:hover {border:2px solid grey;color:grey;}
-      h5 {font-style:italic}
+      h5 {font-style:italic;}
+      p {font-style:italic;}
     </style>
     <meta charset="utf-8">
     <script type="text/javascript">
       function demoAdd(n1, n2) {
         let answer = (n1 + n2);
-        document.getElementById("revealAnswer").innerHTML = answer;
+        document.getElementById("revealAnswer").innerHTML = ("<p>" + answer + "</p>");
         console.log("answer");
       };
     </script>

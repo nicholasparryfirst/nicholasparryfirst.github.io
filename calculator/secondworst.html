@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      main {
+        width:80%;
+        margin:auto;
+        text-align:center;
+        font-family:Helvetica,Futura,sans-serif;
+      }
+      button {border:2px solid black;font-weight:bold;padding:0.5em;border-radius:5px;}
+      button:hover {border:2px solid grey;color:grey;}
+      h5 {font-style:italic;}
+      p {font-style:italic;}
+      .redText {color:red;font-family: "Comic Sans", cursive;}
+    </style>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function addDemo() {
+        var n1 = document.getElementById("firstNum").value;
+        var n1 = parseInt(n1, 10);
+        console.log("The First Number Is: " + n1);
+        var n2 = document.getElementById("secondNum").value;
+        var n2 = parseInt(n2, 10);
+        console.log("The Second Number Is: " + n2);
+        let answer = (n1 + n2);
+        document.getElementById("revealAnswer").innerHTML = answer;
+        console.log("The result is: " + answer);
+      };
+    </script>
+    <title>The World's Second Worst Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="sectionHeader">
+        <h5>Introducing...</h5>
+        <h1>The World's <span class="redText">Second</span> Worst Calculator</h1>
+        <select id="firstNum">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="0">0</option>
+        </select>
+        <span>+</span>
+        <select id="secondNum">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="0">0</option>
+        </select> <br/><br/>
+        <button onclick="addDemo()">Generate</button>
+        <p id="revealAnswer"></p>
+      </div>
+    </main>
+  </body>
+</html>
