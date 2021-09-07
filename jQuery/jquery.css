@@ -1,0 +1,38 @@
+main {
+  margin-top: 5vw;
+}
+
+nav {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section {
+  text-align: center;
+  padding:1em;
+}
+
+ul li {
+    display:inline-block;
+    font-family: monospace;
+    list-style-type: none;
+    padding:1em;
+    background-color:gold;
+    cursor:pointer;
+    color:black;
+    width:150px;
+    text-align: left;
+}
+
+ul {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.active {color:white;}
+
+#fadeIn {margin-left: 2em; display:none;}
+#fadeIn2 {margin-left: 2em; display:none;}
