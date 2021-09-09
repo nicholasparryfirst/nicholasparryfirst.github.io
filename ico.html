@@ -4,11 +4,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <title>Animated Icons</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      .selected {
+        color:red;
+      }
+    </style>
   </head>
   <body>
     <div id="ico1" class="fa"></div>
     <div id="ico2" class="fa"></div>
     <div id="ico3" class="fa"></div>
+
+    <button type="button" name="button" onclick="selected();"></button>
+
+    <?php echo "Hello Wrld!";  ?>
+
     <script>
 function hourglass() {
   var a;
@@ -62,6 +73,12 @@ function smile() {
 }
 smile();
 setInterval(smile, 4000);
+</script>
+
+<script>
+function selected() {
+  $('#ico1').addClass('selected');
+}
 </script>
 
   </body>
