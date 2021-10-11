@@ -1,0 +1,144 @@
+body {
+  margin:0;
+  font-family:sans-serif;
+}
+
+/* HEADER AREA */
+header {
+  background-color:rgb(96, 126, 143);
+  color:white;
+  padding:1em;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.header-left {
+  width:30%;
+  text-align: center;
+  line-height: 1em;
+}
+
+.header-left h1 {
+  font-size: 3em;
+}
+.header-left h5 {
+  color:gold;
+  font-size: 0.5em;
+  margin-top: 0;
+  padding-top: 0;}
+
+.header-right {
+  width:30%;
+  text-align: right;
+}
+.header-right img {
+  width:50%;
+}
+    /*HEADER END*/
+    /*NAV BEGIN*/
+nav {
+  background-color:rgb(96, 126, 143);
+  padding: 1em 0em;;
+  color:white;
+}
+.navbar {
+
+}
+.navbar ul {
+  list-style-type: none;
+  display:flex;
+}
+.nav-item {
+  color:white;
+  text-decoration: none;
+  padding-right:0.5em;
+}
+.nav-item:hover {
+  color:gold;
+}
+.active {
+  display:none;
+}
+
+main {
+  background-color:rgb(242, 245, 203);
+  color:rgb(96, 126, 143);
+  padding:1em;
+
+}
+
+footer {
+  background-color:rgb(96, 126, 143);
+  color:white;
+  padding:1em;
+
+}
+
+.styled-article {
+  border-left:2px solid rgb(96, 126, 143);
+  padding-left:0.5em;
+}
+
+.main-section {
+  border: 2px solid rgb(96, 126, 143);
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+.main-header{
+  text-align: center;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.form-area {
+  width:40%;
+  margin:auto;
+  padding:1em;
+}
+
+.submit-button {
+  background-color: rgb(96,126,143);
+  border:2px solid rgb(96,126,143);
+  border-radius:5px;
+  color:white;
+  display:block;
+  margin:auto;
+}
+
+.section-image {
+  width:45%;
+  display:block;
+  margin:auto;
+}
+.portfolio-image {
+  width:90%;
+  display:block;
+  margin:auto;
+  margin-top: 1em;
+}
+
+.section-video {
+  width:100%;
+  padding-top:0.5em;
+}
+
+.col3 {
+  box-sizing: border-box;
+  width:30%;
+  overflow:hidden;
+}
+
+.col3 h3 {
+  text-align: center;
+
+}
+
+.main-section-columns {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
