@@ -1,3 +1,36 @@
 #cute_bird {
-  width:200px;
+  width:70%;
+}
+
+
+
+
+
+/* EXTRA STUFF - Don't Pay Attention! */
+.birdImage {
+  width:70%;
+}
+
+#title_header {
+  text-align: center;
+}
+
+#title_subheader {
+  text-align: center;
+}
+
+.caption {
+  color:grey;
+}
+
+.one_third {
+  display: inline-block;
+  width:30%;
+}
+.div_img {
+  height:300px;
+}
+
+.full_width {
+  width:100%;
 }
