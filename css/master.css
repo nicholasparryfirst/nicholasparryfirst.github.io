@@ -1,12 +1,25 @@
 #cute_bird {
-  width:70%;
+  width:50%;
+  /* This is how you center a image! */
+  display:block;
+  margin:auto;
+  border:2px solid blue;
+  margin-bottom: 200px;
 }
 
+.center_txt {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
 
-
+/* #cute_bird {
+  width:70%;
+} */
 
 
 /* EXTRA STUFF - Don't Pay Attention! */
+/*
 .birdImage {
   width:70%;
 }
@@ -34,3 +47,4 @@
 .full_width {
   width:100%;
 }
+*/
