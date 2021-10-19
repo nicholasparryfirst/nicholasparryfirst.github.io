@@ -1,0 +1,15 @@
+.hidden {
+  color:inherit;
+}
+
+.hidden:hover {
+  color:pink;
+}
+
+.dark_hidden {
+  color:inherit;
+}
+
+.dark_hidden:hover {
+  color:gold;
+}
