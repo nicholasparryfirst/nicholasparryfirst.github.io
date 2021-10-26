@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+
+* {
+  margin:0;
+}
+
+body {
+  font-family: "Courier New";
+}
+
+header {
+  background-color:rgb(228, 120, 86);
+  color:white;
+  overflow:auto;
+  padding:20px;
+}
+
+.header_left {
+  font-family: "Rampart One";
+  float:left;
+}
+
+.header_right {
+  float:right;
+  text-align: right;
+}
+
+main {
+  clear:both;
+  height:600px;
+}
+
+hr {
+  text-decoration: none;
+}
+
+footer {
+  background-color:rgb(228, 120, 86);
+  color:white;
+  overflow:auto;
+  padding:20px;
+}
+
+.footer_left {
+  width:30%;
+  float:left;
+}
+
+.footer_right {
+  width:60%;
+  float:right;
+  border-left: 2px solid white;
+  padding-left: 10px;
+}
+
+/* Page Components */
+.hero {
+  background:url('../assets/dev/grassy.jpeg');
+
+  text-align: center;
+  padding:50px 20px;
+}
+
+.hero::before {
+  background-color:rgba(0,0,0,0.5);
+  display:block;
+}
+
+.hero h1 {
+  color:white;
+  font-size:34pt;
+  padding:20px;
+}
+
+.hero_button {
+  color:white;
+  background-color:rgb(228, 120, 86);
+  border: 2px solid rgb(228, 120, 86);
+  padding:10px;
+  font-size: 14pt;
+  font-family:"Courier New", monospace;
+}
+
+.hero_button:hover {
+
+}
+
+.circle {
+}
+
+/* TYPOGRAPHY */
+.footer_left p {
+
+}
+
+footer h5 {
+  font-family: "Rampart One";
+  font-size: 18pt;
+}
+
+.dropcap {
+  font-size: 20pt;
+  font-weight:bold;
+  color:inherit;
+}
