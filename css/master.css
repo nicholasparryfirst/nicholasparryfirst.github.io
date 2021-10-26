@@ -56,16 +56,12 @@ footer {
 
 /* Page Components */
 .hero {
-  background:url('../assets/dev/grassy.jpeg');
+  background-image:url('../assets/dev/grassy.jpeg');
 
   text-align: center;
   padding:50px 20px;
 }
 
-.hero::before {
-  background-color:rgba(0,0,0,0.5);
-  display:block;
-}
 
 .hero h1 {
   color:white;

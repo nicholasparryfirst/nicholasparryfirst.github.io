@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+#mainContainer {
+ width:90vw;
+ border:2px solid gold;
+ margin-top:5vh;
+ margin-left:5vw;
+ margin-right: 5vw;
+}
+
+.mainHeader {
+  text-align: center;
+  border: 2px solid gold;
+  margin:10px;
+  color:gold;
+}
+
+.blockContainer {
+  margin: 10px;
+  border: 2px solid red;
+}
+
+.blockHeader {
+  text-align: center;
+  border: 2px solid red;
+  margin:10px;
+  color:red;
+}
+
+.blockBlock {
+  border:2px solid red;
+  background-color: pink;
+  width:100px;
+  height:20px;
+  margin: 5px;
+  display:block;
+}
+
+
+.inlineContainer {
+  margin:10px;
+  border: 2px solid blue;
+}
+
+.inlineHeader {
+  text-align: center;
+  margin:10px;
+  border: 2px solid blue;
+  color:blue;
+}
+
+.inlineBlock {
+  border:2px solid blue;
+  background-color: lightblue;
+  width:100px;
+  height:20px;
+  margin: 5px;
+  display: inline-block;
+
+}
