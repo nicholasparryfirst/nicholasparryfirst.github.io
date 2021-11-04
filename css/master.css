@@ -14,6 +14,8 @@ header {
   color:white;
   overflow:auto;
   padding:20px;
+  position:sticky;
+  top:0;
 }
 
 .header_left {
@@ -28,7 +30,7 @@ header {
 
 main {
   clear:both;
-  height:600px;
+  height:6000px;
 }
 
 hr {
@@ -100,4 +102,13 @@ footer h5 {
   font-size: 20pt;
   font-weight:bold;
   color:inherit;
+}
+
+
+.pos {
+  width:60%;
+  border:2px solid blue;
+  position:sticky;
+  top:10px;
+  left:30%;
 }
