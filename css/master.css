@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Courier New";
+  font-family: "Helvatica", Arial, sans-serif;
 }
 
 header {
@@ -14,23 +14,33 @@ header {
   color:white;
   overflow:auto;
   padding:20px;
-  position:sticky;
-  top:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header_left {
   font-family: "Rampart One";
-  float:left;
+  width:33%;
+  box-sizing: border-box;
+
+}
+.header_left img {
+  width:40%;
+  max-width:100px;
 }
 
 .header_right {
-  float:right;
+  width:66%;
   text-align: right;
+  box-sizing: border-box;
+  border-right:2.5px solid white;
+  padding-right:10px;
 }
 
 main {
   clear:both;
-  height:6000px;
+  height:600px;
 }
 
 hr {
@@ -42,60 +52,126 @@ footer {
   color:white;
   overflow:auto;
   padding:20px;
-
+  display:flex;
+  justify-content: space-between;
 }
 
 .footer_left {
-  width:30%;
-  float:left;
+  width:31%;
+  box-sizing: border-box;
 }
 
 .footer_right {
-  width:60%;
-  float:right;
+  width:64%;
   border-left: 2px solid white;
   padding-left: 10px;
+  box-sizing: border-box;
+
 }
 
 /* Page Components */
 .hero {
-  background-image:url('../assets/dev/grassy.jpeg');
-
+  background: url('../assets/dev/red_sky.jpg');
+  background-size: cover;
+  background-position: center bottom;
   text-align: center;
   padding:50px 20px;
 }
-
 
 .hero h1 {
   color:white;
   font-size:34pt;
   padding:20px;
+  border-bottom: 5px solid white;
 }
 
 .hero_button {
-  color:white;
-  background-color:rgb(228, 120, 86);
-  border: 2px solid rgb(228, 120, 86);
-  padding:10px;
+  color:rgb(228, 120, 86);
+  background-color:white;
+  border: 3px solid white;
+  padding:7px;
   font-size: 14pt;
-  font-family:"Courier New", monospace;
+  font-family:"Helvetica", sans-serif;
+  font-weight: bold;
+  cursor:pointer;
+  margin:40px 10px 0px 10px;
 }
 
 .hero_button:hover {
-
+  color:white;
+  background-color:rgb(228, 120, 86);
+  border: 3px solid white;
 }
 
-.circle {
+#hero_image {
+  border: 5px solid white;
+  padding:20px;
+  width:70%;
+  display:block;
+  margin:auto;
 }
+
+
+/* Navbar */
+
+  nav {
+    position:sticky;
+    top:0;
+    border-top:5px solid rgb(228, 120, 86);
+    border-bottom:5px solid rgb(228, 120, 86);
+    background-color: white;
+    padding:5px;
+  }
+
+  nav div {
+    max-width: 80%;
+    margin:auto;
+    text-align: center;
+  }
+
+  .navbar {
+    list-style-type: none;
+    padding-left:0;
+  }
+
+  .navbar li {
+    display:inline-block;
+  }
+
+  .navbar a {
+    color:rgb(228, 120, 86);
+    padding:5px;
+
+    text-decoration: none;
+  }
+
+  .navbar li:hover a {
+    color:grey;
+  }
+
+  .active {
+    display:none;
+  }
+
 
 /* TYPOGRAPHY */
 .footer_left p {
+  margin-top:10px;
+  text-align: center;
+}
 
+#footer_logo {
+  width:100%;
 }
 
 footer h5 {
   font-family: "Rampart One";
   font-size: 18pt;
+}
+
+#footer_copyright {
+  text-align: right;
+  margin: 20px 0;
 }
 
 .dropcap {
@@ -104,11 +180,8 @@ footer h5 {
   color:inherit;
 }
 
+/* CONTACT FORM */
 
-.pos {
-  width:60%;
-  border:2px solid blue;
-  position:sticky;
-  top:10px;
-  left:30%;
+form {
+  width:80%;
 }
