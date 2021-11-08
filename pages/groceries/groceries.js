@@ -1,18 +1,26 @@
-var grocery_items = document.getElementsByClassName('groceries');
+var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
-var checkboxes = document.querySelector("input[name=groceries]");
+var items = document.getElementsByClassName('groceries');
 
-var checkbox = checkboxes[0];
-var grocery_item = grocery_items[0];
+// for(var i = 0; i < checkboxes.length; i++){
+//      var checkbox = checkboxes[i];
+//      checkbox.addEventListener('click', function(){
+//
+//        if (checkbox.checked) {
+//          console.log(checkbox.id + ' checked');
+//        } else {
+//          console.log(checkbox.id + ' un-checked');
+//        }
+//      });
+// }
 
-console.log("groceries.js loaded");
+function strike(e){
 
-checkbox.addEventListener('change', function() {
-  for (i = 0; i < checkbox.length; i++) {
-    if (checkbox[i].checked) {
-      grocery_item[i].classList.add("strike");
-    } else  {
-      grocery_item[i].classList.remove("strike");
-    }
+  var item = document.getElementById("item" + e);
+
+  if (checkboxes[e - 1].checked == true) {
+    item.classList.add("strike");
   }
-})
+  else {  item.classList.remove("strike");
+  }
+}
