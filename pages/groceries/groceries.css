@@ -1,0 +1,37 @@
+body {
+  margin:0;
+  background-color:black;
+  font-family: monospace;
+}
+
+header h1 {
+  color:white;
+  padding:25px;
+  text-align: center;
+}
+
+li a, li {
+  color:white;
+}
+
+main div {
+  width:70%;
+  margin:auto;
+  border:5px solid orange;
+}
+
+main h3 {
+  color:white;
+  border-bottom: 5px dashed orange;
+  padding: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+input[type=checkbox] {
+  margin-left:90%;
+}
+
+.strike {
+  text-decoration: line-through;
+}
