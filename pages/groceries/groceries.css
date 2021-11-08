@@ -33,6 +33,24 @@ input[type=checkbox] {
   right:20%;
 }
 
+section {
+  text-align: center;
+}
+
+section button {
+  margin:20px;
+  padding:7.5px;
+  color:black;
+  background-color: orange;
+  border:1px solid orange;
+  border-radius: 5px;
+}
+
+section button:hover {
+  color:white;
+  cursor: pointer;
+}
+
 .strike {
   text-decoration: line-through;
 }
