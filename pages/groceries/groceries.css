@@ -29,7 +29,8 @@ main h3 {
 }
 
 input[type=checkbox] {
-  margin-left:90%;
+  position:absolute;
+  right:20%;
 }
 
 .strike {

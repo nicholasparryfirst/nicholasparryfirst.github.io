@@ -1,6 +1,9 @@
-var grocery_item = document.getElementsByClassName('groceries');
+var grocery_items = document.getElementsByClassName('groceries');
 
-var checkbox = document.querySelector("input[name=groceries]");
+var checkboxes = document.querySelector("input[name=groceries]");
+
+var checkbox = checkboxes[0];
+var grocery_item = grocery_items[0];
 
 console.log("groceries.js loaded");
 
