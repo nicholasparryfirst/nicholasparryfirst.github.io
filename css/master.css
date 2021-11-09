@@ -1,187 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-
-
 * {
   margin:0;
 }
 
-body {
-  font-family: "Helvatica", Arial, sans-serif;
+body  {
+  font-family: sans-serif;
 }
 
 header {
-  background-color:rgb(228, 120, 86);
-  color:white;
-  overflow:auto;
-  padding:20px;
-  display: flex;
-  align-items: center;
+  display:flex;
   justify-content: space-between;
+  align-items:center;
+  background-color:white;
+  padding:10px;
+  border-bottom:5px solid black;
 }
 
 .header_left {
-  font-family: "Rampart One";
-  width:33%;
-  box-sizing: border-box;
-
-}
-.header_left img {
-  width:40%;
-  max-width:100px;
+  width:30%;
 }
 
-.header_right {
-  width:66%;
+nav {
+  width:30%;
+}
+
+.navbar {
+  list-style-type: none;
   text-align: right;
-  box-sizing: border-box;
-  border-right:2.5px solid white;
-  padding-right:10px;
 }
 
-main {
-  clear:both;
-  height:600px;
-}
-
-hr {
+.navbar a {
+  color:black;
   text-decoration: none;
 }
 
-footer {
-  background-color:rgb(228, 120, 86);
-  color:white;
-  overflow:auto;
-  padding:20px;
-  display:flex;
-  justify-content: space-between;
+.navbar a:hover {
+  /* color:#8FC6B2; */
+  color:#208E66;
 }
 
-.footer_left {
-  width:31%;
+aside {
+  float:left;
+  width:30%;
   box-sizing: border-box;
+  padding:10px;
 }
 
-.footer_right {
-  width:64%;
-  border-left: 2px solid white;
-  padding-left: 10px;
-  box-sizing: border-box;
-
-}
-
-/* Page Components */
-.hero {
-  background: url('../assets/dev/red_sky.jpg');
-  background-size: cover;
-  background-position: center bottom;
-  text-align: center;
-  padding:50px 20px;
-}
-
-.hero h1 {
-  color:white;
-  font-size:34pt;
-  padding:20px;
-  border-bottom: 5px solid white;
-}
-
-.hero_button {
-  color:rgb(228, 120, 86);
-  background-color:white;
-  border: 3px solid white;
-  padding:7px;
-  font-size: 14pt;
-  font-family:"Helvetica", sans-serif;
-  font-weight: bold;
-  cursor:pointer;
-  margin:40px 10px 0px 10px;
-}
-
-.hero_button:hover {
-  color:white;
-  background-color:rgb(228, 120, 86);
-  border: 3px solid white;
-}
-
-#hero_image {
-  border: 5px solid white;
-  padding:20px;
+main {
   width:70%;
-  display:block;
-  margin:auto;
+  float:right;
+  box-sizing: border-box;
+  height:500px;
+}
+
+section {
+  box-shadow: 2px 2px 2px 2px grey;
+  width:95%;
+  margin:10px auto;
+  border-radius: 3px;
+}
+
+footer {
+  clear:both;
+  border-top:5px solid black;
+  background-color:white;
 }
 
 
-/* Navbar */
-
-  nav {
-    position:sticky;
-    top:0;
-    border-top:5px solid rgb(228, 120, 86);
-    border-bottom:5px solid rgb(228, 120, 86);
-    background-color: white;
-    padding:5px;
-  }
-
-  nav div {
-    max-width: 80%;
-    margin:auto;
+/* Section Styling */
+  .section_header {
     text-align: center;
+    padding:20px;
+    border-bottom:1px dashed grey;
   }
 
-  .navbar {
-    list-style-type: none;
-    padding-left:0;
+  .section_body {
+    padding:20px 10px;
+    margin-left:10px;
+    border-right:1px dashed grey;
+    float:left;
+    width:85%;
+    box-sizing: border-box;
   }
 
-  .navbar li {
+  .section_aside {
+    text-align: center;
+    padding-top:20px;
+  }
+
+  .section_aside pre {
+    color:#208E66;
+  }
+  .section_aside pre:hover {
+    color:#8FC6B2;
+    cursor:crosshair;
+  }
+
+  .section_footer {
+    border-top:1px dashed grey;
+    padding:10px;
+    text-align: right;
+    color:#208E66;
+    clear:both;
+  }
+
+  .section_tag {
     display:inline-block;
   }
 
-  .navbar a {
-    color:rgb(228, 120, 86);
-    padding:5px;
-
-    text-decoration: none;
+  .section_more {
+    margin-top:20px;
   }
 
-  .navbar li:hover a {
-    color:grey;
+  .section_more a {
+    color:#208E66;
   }
-
-  .active {
-    display:none;
-  }
-
-
-/* TYPOGRAPHY */
-.footer_left p {
-  margin-top:10px;
-  text-align: center;
-}
-
-#footer_logo {
-  width:100%;
-}
-
-footer h5 {
-  font-family: "Rampart One";
-  font-size: 18pt;
-}
-
-#footer_copyright {
-  text-align: right;
-  margin: 20px 0;
-}
-
-.dropcap {
-  font-size: 20pt;
-  font-weight:bold;
-  color:inherit;
-}
-
-/* CONTACT FORM */
-
-form {
-  width:80%;
-}

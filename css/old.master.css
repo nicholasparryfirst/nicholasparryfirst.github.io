@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+
+* {
+  margin:0;
+}
+
+body {
+  font-family: "Helvatica", Arial, sans-serif;
+}
+
+header {
+  background-color:rgb(228, 120, 86);
+  color:white;
+  overflow:auto;
+  padding:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_left {
+  font-family: "Rampart One";
+  width:33%;
+  box-sizing: border-box;
+
+}
+.header_left img {
+  width:40%;
+  max-width:100px;
+}
+
+.header_right {
+  width:66%;
+  text-align: right;
+  box-sizing: border-box;
+  border-right:2.5px solid white;
+  padding-right:10px;
+}
+
+main {
+  clear:both;
+  height:600px;
+}
+
+hr {
+  text-decoration: none;
+}
+
+footer {
+  background-color:rgb(228, 120, 86);
+  color:white;
+  overflow:auto;
+  padding:20px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.footer_left {
+  width:31%;
+  box-sizing: border-box;
+}
+
+.footer_right {
+  width:64%;
+  border-left: 2px solid white;
+  padding-left: 10px;
+  box-sizing: border-box;
+
+}
+
+/* Page Components */
+.hero {
+  background: url('../assets/dev/red_sky.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  padding:50px 20px;
+}
+
+.hero h1 {
+  color:white;
+  font-size:34pt;
+  padding:20px;
+  border-bottom: 5px solid white;
+}
+
+.hero_button {
+  color:rgb(228, 120, 86);
+  background-color:white;
+  border: 3px solid white;
+  padding:7px;
+  font-size: 14pt;
+  font-family:"Helvetica", sans-serif;
+  font-weight: bold;
+  cursor:pointer;
+  margin:40px 10px 0px 10px;
+}
+
+.hero_button:hover {
+  color:white;
+  background-color:rgb(228, 120, 86);
+  border: 3px solid white;
+}
+
+#hero_image {
+  border: 5px solid white;
+  padding:20px;
+  width:70%;
+  display:block;
+  margin:auto;
+}
+
+
+/* Navbar */
+
+  nav {
+    position:sticky;
+    top:0;
+    border-top:5px solid rgb(228, 120, 86);
+    border-bottom:5px solid rgb(228, 120, 86);
+    background-color: white;
+    padding:5px;
+  }
+
+  nav div {
+    max-width: 80%;
+    margin:auto;
+    text-align: center;
+  }
+
+  .navbar {
+    list-style-type: none;
+    padding-left:0;
+  }
+
+  .navbar li {
+    display:inline-block;
+  }
+
+  .navbar a {
+    color:rgb(228, 120, 86);
+    padding:5px;
+
+    text-decoration: none;
+  }
+
+  .navbar li:hover a {
+    color:grey;
+  }
+
+  .active {
+    display:none;
+  }
+
+
+/* TYPOGRAPHY */
+.footer_left p {
+  margin-top:10px;
+  text-align: center;
+}
+
+#footer_logo {
+  width:100%;
+}
+
+footer h5 {
+  font-family: "Rampart One";
+  font-size: 18pt;
+}
+
+#footer_copyright {
+  text-align: right;
+  margin: 20px 0;
+}
+
+.dropcap {
+  font-size: 20pt;
+  font-weight:bold;
+  color:inherit;
+}
+
+/* CONTACT FORM */
+
+form {
+  width:80%;
+}
