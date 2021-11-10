@@ -19,13 +19,36 @@ header {
   width:30%;
 }
 
-nav {
+.header_right {
   width:30%;
+  text-align: right;
+}
+.header_center {
+  text-align: center;
+}
+
+nav {
+  width:100%;
+  border-bottom:5px solid black;
+}
+
+.nav_wrapper {
+  width:60%;
+  margin:auto;
 }
 
 .navbar {
   list-style-type: none;
-  text-align: right;
+  text-align: center;
+  display:flex;
+  justify-content: space-between;
+}
+
+.navbar li {
+  padding-left:0;
+  display:inline-block;
+  padding: 10px 0px;
+  font-weight: bold;
 }
 
 .navbar a {
@@ -40,13 +63,23 @@ nav {
 
 aside {
   float:left;
-  width:30%;
+  width:20%;
   box-sizing: border-box;
-  padding:10px;
+  padding:20px 10px;
+}
+
+.area_nav {
+  list-style-type: none;
+  padding-left:0;
+  text-align: right;
+}
+
+.area_nav a {
+  color:#208E66;
 }
 
 main {
-  width:70%;
+  width:80%;
   float:right;
   box-sizing: border-box;
   height:500px;
@@ -55,7 +88,7 @@ main {
 section {
   box-shadow: 2px 2px 2px 2px grey;
   width:95%;
-  margin:10px auto;
+  margin:20px auto;
   border-radius: 3px;
 }
 
