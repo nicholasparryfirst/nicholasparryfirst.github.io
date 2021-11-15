@@ -12,19 +12,27 @@ header {
   align-items:center;
   background-color:white;
   padding:10px;
-  border-bottom:5px solid black;
+  /* border-bottom:5px solid black; */
+  border:5px solid red;
 }
 
 .header_left {
   width:30%;
+  border:5px solid red;
+
 }
 
 .header_right {
   width:30%;
   text-align: right;
+  border:5px solid red;
+  display:flex;
+  flex-direction: column;
 }
 .header_center {
   text-align: center;
+  border:5px solid red;
+
 }
 
 nav {
@@ -66,6 +74,11 @@ aside {
   width:20%;
   box-sizing: border-box;
   padding:20px 10px;
+}
+
+aside h3 {
+  text-align: right;
+  margin-bottom: 10px;
 }
 
 .area_nav {
