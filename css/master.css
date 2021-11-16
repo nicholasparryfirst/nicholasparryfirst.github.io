@@ -12,27 +12,22 @@ header {
   align-items:center;
   background-color:white;
   padding:10px;
-  /* border-bottom:5px solid black; */
-  border:5px solid red;
+  border-bottom:5px solid black;
 }
 
 .header_left {
   width:30%;
-  border:5px solid red;
 
 }
 
 .header_right {
   width:30%;
   text-align: right;
-  border:5px solid red;
   display:flex;
   flex-direction: column;
 }
 .header_center {
   text-align: center;
-  border:5px solid red;
-
 }
 
 nav {
@@ -95,7 +90,7 @@ main {
   width:80%;
   float:right;
   box-sizing: border-box;
-  height:500px;
+  /* height:500px; */
 }
 
 section {
@@ -159,4 +154,19 @@ footer {
 
   .section_more a {
     color:#208E66;
+  }
+
+  .quote_section {
+    padding:50px 10px;
+  }
+
+  .quote {
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+
+  .quote_ref {
+    padding-left: 25%;
+    font-size: 1em;
   }
