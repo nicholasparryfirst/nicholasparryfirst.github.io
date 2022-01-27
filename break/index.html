@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="./break.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="controls">
+      <div class="title bar">
+        <div class="left cell">
+          <p>Starting Time:</p>
+        </div>
+        <div class="right cell">
+          <p>Count down to:</p>
+        </div>
+      </div>
+      <div class="info bar">
+        <div class="left cell">
+          <div class="radio">
+            <input type="radio" name="start_time" value="current">
+            <span>Current Time</span>
+          </div>
+          <div class="radio">
+            <input type="radio" name="start_time" value="other">
+            <span>Other Time</span>
+          </div>
+        </div>
+        <div class="right cell">
+          <input type="text" name="count_to" value="Hour" id="end_time_hr"/>
+          <span>:</span>
+          <input type="text" name="count_to" value="Minute" id="end_time_mn"/>
+          <div class="button_cell">
+            <button type="button" name="button" onclick="runCountdown()">Run</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    • !¡ •
+    <div class="header wrapper">
+      <h1>Break Time</h1>
+      <h3>Please return by:</h3>
+    </div>
+
+    <div class="content wrapper">
+      <p id="time_hr" class="time_num">00</p>
+      <p class="time_num">:</p>
+      <p id="time_mn" class="time_num">00</p>
+    </div>
+
+    <script type="text/javascript">
+      function runCountdown(){
+        let endTimeHr = document.getElementById('end_time_hr').value;
+        document.getElementById('time_hr').innerHTML = endTimeHr;
+
+        let endTimeMn = document.getElementById('end_time_mn').value;
+        document.getElementById('time_mn').innerHTML = endTimeMn;
+
+      }
+    </script>
+
+  </body>
+</html>

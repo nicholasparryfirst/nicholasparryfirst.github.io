@@ -1,0 +1,70 @@
+body {
+  font-family:"helvetica";
+}
+
+.wrapper {
+  width:75%;
+  margin:auto;
+  text-align:center;
+}
+
+.header {
+  margin-top:25%;
+}
+.header h1 {
+  font-size: 4em;
+}
+.header h3 {
+  font-size: 2em;
+}
+
+.content {
+  margin-top: 10%;
+}
+.content p{
+  display:inline-block;
+}
+
+.time_num {
+  color:red;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.time_num:hover {
+
+}
+
+/* * * * * * * Top Bar: */
+.bar {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width:50%;
+  border:1px solid black;
+  box-sizing: border-box;
+  padding:7.5px;
+}
+
+.title .cell {
+  text-align: center;
+}
+
+.info .right input {
+  width:30%;
+}
+
+.info .left {
+  display:flex;
+}
+
+.radio {
+  width:45%;
+  text-align: center;
+}
+
+.cell span {
+  color:grey;
+}
