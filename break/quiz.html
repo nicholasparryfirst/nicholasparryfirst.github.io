@@ -7,31 +7,29 @@
   </head>
   <body>
     <div class="controls">
-      <!-- <div class="title bar">
+      <div class="title bar">
         <div class="left cell">
-
+          <p>Starting Time:</p>
         </div>
         <div class="right cell">
-
+          <p>Count down to:</p>
         </div>
-      </div> -->
+      </div>
       <div class="info bar">
         <div class="left cell">
           <div class="radio">
             <input type="radio" name="start_time" value="current">
-            <span>active</span>
+            <span>Current Time</span>
           </div>
           <div class="radio">
-            <input type="radio" name="start_time" value="other" checked>
-            <span>deactivate</span>
+            <input type="radio" name="start_time" value="other">
+            <span>Other Time</span>
           </div>
         </div>
         <div class="right cell">
-          <div class="input_cell">
-            <input type="text" name="count_to" value="Hour" id="end_time_hr"/>
-            <span>:</span>
-            <input type="text" name="count_to" value="Minute" id="end_time_mn"/>
-          </div>
+          <input type="text" name="count_to" value="Hour" id="end_time_hr"/>
+          <span>:</span>
+          <input type="text" name="count_to" value="Minute" id="end_time_mn"/>
           <div class="button_cell">
             <button type="button" name="button" onclick="runCountdown()">Run</button>
           </div>
@@ -41,8 +39,9 @@
     </div>
 
     <div class="header wrapper">
-      <h1>Break Time</h1>
-      <h3>Please return by:</h3>
+      <h4>Shh, be vewwy qwiet</h4>
+      <h1>Quiz Time</h1>
+      <h3>Class resumes at:</h3>
     </div>
 
     <div class="content wrapper">

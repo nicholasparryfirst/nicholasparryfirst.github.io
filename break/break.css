@@ -1,5 +1,6 @@
 body {
   font-family:"helvetica";
+  margin:0;
 }
 
 .wrapper {
@@ -27,7 +28,7 @@ body {
 
 .time_num {
   color:red;
-  font-size: 3em;
+  font-size: 5rem;
   font-weight: bold;
 }
 
@@ -53,9 +54,39 @@ body {
 }
 
 .info .right input {
-  width:30%;
+  width:40%;
+  border: 2px solid black;
+  border-radius: 3.5px;
+  text-align: center;
+  font-weight: bold;
+}
+.info .right input:hover {
+  border-color: red;
+}
+.info .right {
+  display:flex;
+  justify-content: space-between;
 }
 
+.button_cell {
+  display: inline-block;
+  width:28%;
+}
+.button_cell button {
+  width:100%;
+  border:2px solid black;
+  border-radius: 3.5px;
+  background-color: white;
+  font-weight: bold;
+}
+.button_cell button:hover {
+  color:red;
+  border-color: red;
+  cursor:pointer;
+}
+.input_cell {
+  width:68%;
+}
 .info .left {
   display:flex;
 }
@@ -66,5 +97,5 @@ body {
 }
 
 .cell span {
-  color:grey;
+  font-weight: bold;
 }
