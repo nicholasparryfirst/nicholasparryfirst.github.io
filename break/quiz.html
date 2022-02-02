@@ -31,7 +31,7 @@
           <span>:</span>
           <input type="text" name="count_to" value="Minute" id="end_time_mn"/>
           <div class="button_cell">
-            <button type="button" name="button" onclick="runCountdown()">Run</button>
+            <button type="button" name="button" onclick="runCountdown()" id="run_button">Run</button>
           </div>
 
         </div>
@@ -49,16 +49,31 @@
       <p class="time_num">:</p>
       <p id="time_mn" class="time_num">00</p>
     </div>
+    <div id="demo">
+
+    </div>
 
     <script type="text/javascript">
-      function runCountdown(){
-        let endTimeHr = document.getElementById('end_time_hr').value;
-        document.getElementById('time_hr').innerHTML = endTimeHr;
 
-        let endTimeMn = document.getElementById('end_time_mn').value;
+    let endTimeHr = document.getElementById('end_time_hr').value;
+    let endTimeMn = document.getElementById('end_time_mn').value;
+    let runButton = document.getElementById('run_button');
+    let demo = document.getElementById('demo');
+
+      function runCountdown(){
+        document.getElementById('time_hr').innerHTML = endTimeHr;
         document.getElementById('time_mn').innerHTML = endTimeMn;
 
       }
+
+    endTimeHr.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        runButton.click();
+        demo.innerHTML = "a";
+      }
+    });
+
     </script>
 
   </body>
