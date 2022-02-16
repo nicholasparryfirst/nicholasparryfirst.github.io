@@ -20,14 +20,14 @@ body {
 }
 
 .content {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .content p{
   display:inline-block;
 }
 
 .time_num {
-  color:red;
+  color:purple;
   font-size: 5rem;
   font-weight: bold;
 }
