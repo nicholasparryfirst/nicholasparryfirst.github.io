@@ -39,19 +39,21 @@
     </div>
 
     <div class="header wrapper">
+      <button type="button" name="button" style="border:1px solid black; background-color:white; padding:10px;" onclick="revealPassword()">PW</button>
       <h4>Shh, be vewwy qwiet</h4>
       <h1>Quiz Time</h1>
-      <h3>Class resumes at:</h3>
     </div>
 
     <div class="content wrapper">
-      <p id="time_hr" class="time_num">00</p>
-      <p class="time_num">:</p>
-      <p id="time_mn" class="time_num">00</p>
     </div>
     <div id="demo">
 
     </div>
+
+    <div id="password1" style="font-size:18pt;text-align:center;"></div>
+    <div id="password2" style="font-size:18pt;text-align:center;"></div>
+
+    <img src="./matt.png" alt="" style="display:none;width:20%;" id="matt">
 
     <script type="text/javascript">
 
@@ -64,6 +66,14 @@
         document.getElementById('time_hr').innerHTML = endTimeHr;
         document.getElementById('time_mn').innerHTML = endTimeMn;
 
+      }
+
+      function revealPassword(){
+        let pw1 = "101: ABC123";
+        let pw2 = "102: MICHAELJACKSON";
+        document.getElementById("password1").innerHTML = pw1;
+        document.getElementById("password2").innerHTML = pw2;
+        document.getElementById("matt").style.display = "block";
       }
 
     endTimeHr.addEventListener("keyup", function(event) {
