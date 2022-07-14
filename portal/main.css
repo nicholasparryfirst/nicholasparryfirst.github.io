@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+#site-body {
+    background-color: lightskyblue;
+    color:darkblue;
+    font-family: monospace;
+    margin:0;
+}
+
+main {
+    width:80%;
+    margin:auto;
+
+}
+
+#site-header {
+    background-color: beige;
+    padding:20px;
+    border-bottom: 2px solid darkblue;
+    margin-bottom: 50px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portal-wrapper {
+    padding:25px;
+    background-color: lightcyan;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 2px solid darkblue;
+}
+
+.portal-item {
+    width:300px;
+    height:300px;
+    background:white;
+    border: 2px solid darkblue;
+    box-shadow: 3px 3px 1px 0px rgba(0, 0, 139, 0.3);
+    padding: 20px;
+    margin:20px;
+    cursor:pointer;
+}
+
+.portal-item:hover {
+    box-shadow: none;
+    border-color: darkslateblue;
+}
