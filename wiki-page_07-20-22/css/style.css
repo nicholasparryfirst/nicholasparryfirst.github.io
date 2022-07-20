@@ -1,0 +1,23 @@
+body {
+  padding:50px;
+  font-family:"Helvetica";
+}
+#img1 {
+  width:25%;
+  float:right;
+  margin:50px;
+  border: 5px solid red;
+  padding:50px;
+}
+#img2 {
+  width:33%;
+}
+
+.red-text {
+  color:red;
+  padding:5px;
+  border: 5px dotted red;
+}
+.padding {
+  padding:50px;
+}
