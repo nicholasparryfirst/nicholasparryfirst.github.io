@@ -56,6 +56,11 @@ main {
 
 }
 
+.portal-header hr {
+  border-color:darkblue;
+  margin: 5px 0px;
+}
+
 .portal-item {
     width:300px;
     height:300px;
@@ -71,10 +76,34 @@ main {
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .portal-item:hover {
     box-shadow: none;
     border-color: darkslateblue;
     color:darkslateblue;
+}
+.portal-top {
+  margin-bottom:25px;
+}
+.portal-bottom {
+  margin-top:25px;
+  width:80%;
+}
+
+.portal-bottom h5 {
+  text-align: center;
+  margin-bottom:25px;
+}
+
+.portal-link {
+  display:flex;
+  justify-content: space-between;
+  width:60%;
+  margin:auto;
+}
+.portal-link a { color:darkblue;}
+.portal-link a:hover {
+  color:lightblue;
 }
