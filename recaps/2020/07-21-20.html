@@ -50,7 +50,20 @@
       .header-wrapper:hover {
         background-position: left;
       }
-
+      .button {
+        background-color: rgba(250,250,255,1);
+        border: 2px solid lightblue;
+        border-radius:5px;
+        color:lightblue;
+        padding:10px;
+      }
+      .button:hover {
+        background-color:lightblue;
+        color: rgba(250,250,255,1);
+      }
+      .button:active {
+        box-shadow:1px 1px 3px rgba(50,50,50,0.5) inset;
+      }
       .spacer {
         padding:30px;
       }
@@ -75,11 +88,49 @@
       .black-txt {
         color:black;
       }
+
+      #break-modal {
+        display:none;
+        background-color: rgba(0,0,0,0.6);
+        width:100%;
+        height:200%;
+        position: absolute;
+        top:0;
+        left:0;
+      }
+      .modal-content {
+        width:80%;
+        height:80%;
+        margin:10% auto;
+
+        background-color:white;
+        border-radius: 25px;
+        box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.65);
+      }
+      .modal-image {
+        width:90%;
+        margin: auto;
+        display:block;
+        border-radius: 20px;
+      }
+      .modal-close {
+        /* position:relative;
+        top:10px;
+        right:10px; */
+      }
+      .modal-close i {
+        float:right;
+      }
+      .reveal {
+        display:block !important;
+      }
     </style>
   </head>
   <body>
     <div class="intro-wrapper">
-      <p id="intro" class="drop-through-text pos-absolute">Hey there, welcome in.</p>
+      <p id="intro" class="drop-through-text pos-absolute">
+        Break time: back at 10:25.
+      </p>
     </div>
     <main>
       <div class="header-wrapper" id="slidey">
@@ -106,6 +157,7 @@
             <li>External</li>
             <li>Internal</li>
           </ul>
+          <li>Design Swap</li>
         </ul>
       </div>
 
@@ -130,19 +182,31 @@
       <div class="spacer"></div>
 
       <hr>
+
+      <div class="button-wrapper">
+        <button class="button break-button" type="button" name="break" onclick="revealModal()">Break Timer</button>
+      </div>
     </main>
     <div class="closing-container">
       <p class="drop-through-text">Thanks for stopping by!</p>
     </div>
 
-    <div class="modal">
+    <div id="break-modal" class="modal">
       <div class="modal-content">
-        <img src="" alt="">
+        <div class="modal-close" onclick="closeModal()"><i data-feather="x-square" style="color:lightblue"></div>
+
+        <img class="modal-image" src="https://i.kym-cdn.com/photos/images/newsfeed/001/713/929/f39.png_large" alt="Graphic design and coding is shit poster">
+        <hr>
+        <div class="drop-through-text">
+          <p>Welcome In</p>
+        </div>
       </div>
     </div>
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <script type="text/javascript">
       const div = document.getElementById('slidey');
+      const modal = document.getElementById("break-modal");
 
       function slideBkgrnd() {
         div.classList.add("restore_slide");
@@ -151,8 +215,20 @@
         div.classList.add("black-txt");
       }
 
-      setTimeout(slideBkgrnd, 2000);
-      setTimeout(blackTxt, 3000);
+      setTimeout(slideBkgrnd, 3000);
+      setTimeout(blackTxt, 1000);
+
+      function revealModal() {
+        modal.classList.add("reveal");
+      }
+
+      function closeModal(){
+        modal.classList.remove("reveal");
+      }
+    </script>
+
+    <script>
+      feather.replace()
     </script>
   </body>
 </html>
