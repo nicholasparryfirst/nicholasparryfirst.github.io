@@ -16,3 +16,14 @@ body {
   border-style:solid;
   border-width: 2px; */
 }
+
+.contents-header {
+  /* margin-top:25px; */
+}
+.contents-container {
+  width:40%;
+  border:1px solid black;
+  padding:25px;
+  background-color:lightgrey;
+  margin-top:25px;
+}
