@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./feather/feather.min.js"></script>
     <meta charset="utf-8">
     <title>Recap</title>
     <style media="screen">
@@ -104,6 +104,7 @@
         width:80%;
         height:80%;
         margin:10% auto;
+        /* display:inherit; */
 
         background-color:white;
         border-radius: 25px;
@@ -120,9 +121,9 @@
         top:10px;
         right:10px; */
       }
-      .modal-close i {
+      /* .modal-close i {
         float:right;
-      }
+      } */
       .reveal {
         display:block !important;
       }
@@ -195,7 +196,7 @@
 
     <div id="break-modal" class="modal">
       <div class="modal-content">
-        <div class="modal-close" onclick="closeModal()"><i data-feather="x-square" style="color:lightblue"></div>
+        <div class="modal-close" onclick="closeModal()"><ion-icon name="close" style="color:lightblue"></ion-icon></div>
 
         <img class="modal-image" src="https://i.kym-cdn.com/photos/images/newsfeed/001/713/929/f39.png_large" alt="Graphic design and coding is shit poster">
         <hr>
@@ -205,31 +206,34 @@
       </div>
     </div>
 
+
+
     <script type="text/javascript">
-      const div = document.getElementById('slidey');
-      const modal = document.getElementById("break-modal");
+        let breakModal = document.getElementById("break-modal");
+        const div = document.getElementById('slidey');
 
-      function slideBkgrnd() {
-        div.classList.add("restore_slide");
-      }
-      function blackTxt() {
-        div.classList.add("black-txt");
-      }
+        function slideBkgrnd() {
+          div.classList.add("restore_slide");
+        }
+        function blackTxt() {
+          div.classList.add("black-txt");
+        }
 
-      setTimeout(slideBkgrnd, 3000);
-      setTimeout(blackTxt, 1000);
+        setTimeout(slideBkgrnd, 3000);
+        setTimeout(blackTxt, 1000);
 
-      function revealModal() {
-        modal.classList.add("reveal");
-      }
+        function revealModal(){
+          breakModal.classList.add("reveal");
+        }
 
-      function closeModal(){
-        modal.classList.remove("reveal");
-      }
+        function closeModal(){
+          breakModal.classList.remove("reveal");
+        }
+
+        // feather.replace()
+
     </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
-    <script>
-      feather.replace()
-    </script>
   </body>
 </html>
