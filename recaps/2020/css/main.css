@@ -19,6 +19,7 @@ li {
   font-weight: bold;
   padding-bottom:10px;
   cursor:crosshair;
+  transition:0.35s ease;
 }
 li:hover {
   color:lightcoral;

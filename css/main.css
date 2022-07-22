@@ -2,28 +2,18 @@
   margin:0;
 }
 body {
-  background-color:grey;
+  background-color:hsl(244, 28%, 11%);
+  color:#FFFFCC;
   margin:0px;
   padding:50px;
+  border-top: 30px solid #FFFFCC;
+  font-size: 2em;
 }
+ a {
+  color:#FFFFCC;
+ }
 
-.main-container {
-  background-color:white;
-  padding:25px;
-  border: 2px solid black;
-  box-shadow: 5px 5px 5px 5px rgba(30,30,30,0.4);
-  /* border-color:black;
-  border-style:solid;
-  border-width: 2px; */
-}
-
-.contents-header {
-  /* margin-top:25px; */
-}
-.contents-container {
-  width:40%;
-  border:1px solid black;
-  padding:25px;
-  background-color:lightgrey;
-  margin-top:25px;
-}
+ ion-icon {
+  float:left;
+  margin-right: 5px;
+ }
