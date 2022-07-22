@@ -1,0 +1,117 @@
+/*------ Form input ------*/
+  .button {
+    background-color: rgba(250,250,255,1);
+    border: 0px solid lightblue;
+    border-radius:5px;
+    color:lightblue;
+    padding:10px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(220, 240, 250), -2px -2px 2px 2px rgba(255,255,255,0.8);
+  }
+  .button:hover {
+    /* background-color:lightblue; */
+    color: lightpink;
+
+  }
+  .button:active {
+    box-shadow: 2px 2px 2px 2px rgb(220, 240, 250) inset, -2px -2px 2px 2px rgba(255,255,255,0.8) inset;
+  }
+  .break-modal-wrapper input {
+    background-color: rgba(250,250,255,1);
+    box-shadow: 2px 2px 2px 2px rgb(220, 240, 250) inset, -2px -2px 2px 2px rgba(255,255,255,0.8)inset;
+    border: 0px solid lightblue;
+    border-radius:5px;
+    padding:10px;
+    width:5%;
+    color:lightblue;
+    text-align: center;
+  }
+  .break-modal-wrapper input:hover {
+    color:lightpink;
+  }
+  #time-delim {
+    color:lightblue;
+  }
+  /* .break-modal-wrapper input:focus-visible {
+    border:1px solid lightcoral !important;
+  } */
+
+.break-modal-wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#break-modal {
+  display:none;
+  background-color: rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+}
+.modal-content {
+  width:80%;
+  height:80%;
+  margin:10% auto;
+  /* display:inherit; */
+
+  background-color:white;
+  border-radius: 25px;
+  box-shadow: 6px 6px 4px 2px rgba(0,0,0,0.55);
+}
+.modal-image {
+  width:90%;
+  margin: auto;
+  display:block;
+  border-radius: 20px;
+}
+.modal-close {
+  color:lightblue;
+  padding-bottom:11px;
+  border-bottom: 2px solid lightblue;
+  margin-bottom: 0;
+}
+.modal-close > * {
+  position:relative;
+  top:10px;
+  left:95%;
+  font-size: 24px;
+  cursor:pointer;
+}
+.modal-close:hover {
+  color:lightpink;
+}
+.time-bar {
+  border-color:rgba(250,250,255,1);
+  margin-top: 0;
+}
+.reveal {
+  display:block !important;
+}
+.modal-text {
+  padding:25px;
+}
+
+/* TIMER */
+
+.time-header {
+  text-align: center;
+  font-size: 2em;
+  font-variant-caps:all-small-caps;
+  margin:0;
+}
+.time-wrapper {
+  font-size: 6em;
+  text-align:center;
+
+  background-color: lightcoral;
+
+  font-weight: bold;
+  color: transparent;
+  text-shadow: 5px 5px 9px rgba(250,250,255,1);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+
+}
