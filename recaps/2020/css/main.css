@@ -14,11 +14,12 @@ main {
   box-shadow: 5px 5px 5px 4px rgb(220, 240, 250), -5px -5px 5px 5px rgba(255,255,255,0.8);
   margin:auto;
   max-width:600px;
+  cursor:crosshair;
 }
 li {
   font-weight: bold;
   padding-bottom:10px;
-  cursor:crosshair;
+  cursor:inherit;
   transition:0.35s ease;
 }
 li:hover {
@@ -88,4 +89,5 @@ hr {
 }
 a {
   color:rgb(57, 109, 128);
+  cursor:pointer;
 }
