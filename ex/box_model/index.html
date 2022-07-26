@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The CSS Box Model</title>
+    <style media="screen">
+      body {
+        background-color:lightblue;
+      }
+      .box-model {
+        /* Box Model: */
+        width:50vw;
+        height:50vw;
+        margin: 25vw auto;
+        border-width:20px;
+        padding: 50px;
+
+        /* Style: */
+        color:white;
+        font-size:3em;
+        font-weight:bold;
+        font-family:sans-serif;
+        background-color:lightpink;
+        border-color:gold;
+        border-style:solid;
+      }
+      .box-model span {
+        border:5px solid lightpink;
+      }
+      .background-on {
+        background-color:red;
+        border:5px solid red;
+      }
+      .button {
+        color:white;
+        font-family:sans-serif;
+        padding:10px;
+        border: 2px solid gold;
+        width:20%;
+        text-align:center;
+        background-color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="check" class="button activator-button" type="button" name="button" onclick="borderOn()">Check Content</button>
+    <!-- <button id="check" class="button label-button" type="button" name="button" onclick="identifyItems()">Identify</button> -->
+    <div class="box-model">
+      <span id="content1"><span id="content">Content</span>, content, content, content, content...</span>
+      <span id="content2">Words, words, words, words, words, words...</span>
+    </div>
+    <script type="text/javascript">
+      const ck = document.getElementById("check");
+      const c1 = document.getElementById("content1");
+      const c2 = document.getElementById("content2");
+
+      function borderOn() {
+        console.log("Fired");
+        c1.classList.toggle("background-on");
+        c2.classList.toggle("background-on");
+      }
+      function identifyItems(){
+
+      }
+    </script>
+  </body>
+</html>
