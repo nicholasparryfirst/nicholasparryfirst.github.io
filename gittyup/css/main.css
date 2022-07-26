@@ -1,0 +1,61 @@
+body {
+  background-color:lavender;
+  font-family:"helvetica", "arial", sans-serif;
+  padding:10%;
+}
+
+.header {
+  background-color:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:30px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.header-image {
+  width:25%;
+}
+
+.header-title {
+  color:RebeccaPurple;
+  font-size:4em;
+}
+
+/* NAVBAR STYLING */
+.nav {
+  background-color:RebeccaPurple;
+  padding:20px;
+}
+.nav ul {
+  padding-left:0px;
+
+}
+.nav li {
+  list-style-type:none;
+  display:inline;
+  padding: 5px 10px;
+  color:white;
+}
+.nav li:hover {
+  color:gold;
+}
+
+.content {
+  background-color:white;
+  padding:30px;
+  border-left: 3px solid RebeccaPurple;
+}
+
+.footer {
+  background-color:white;
+  height:200px;
+  border-top: 3px solid RebeccaPurple;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.main {
+  border-radius: 15px;
+  border:5px solid RebeccaPurple;
+  box-shadow: 7px 7px 3px 3px rgba(102, 51, 153, 0.3);
+}
