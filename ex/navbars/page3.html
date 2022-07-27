@@ -27,6 +27,7 @@
         width:100px;
         padding:0px 10px;
         text-align: center;
+        font-size: 1.25em;
 
         /* Positioning CSS */
         display:inline-block;
@@ -38,8 +39,9 @@
       nav li:hover::before {
         content:"< // >";
         position:absolute;
-        top:20%;
-        padding-right:10px;
+        top:180px;
+        margin-left:25px;
+        /* padding-right:10px; */
         /* background-color:blanchedalmond; */
         color:tomato;
       }
@@ -68,7 +70,7 @@
 
       /* General page CSS  */
       body {
-        font-family:sans-serif;
+        font-family:monospace;
         margin:0;
       }
       header {
@@ -88,13 +90,14 @@
         cursor:pointer;
       }
       header h1::after {
-        transition:0.5s;
+        font-family: monospace;
+        /* transition:0.5s; */
       }
       header h1:hover {
         color:tomato;
       }
       header h1:hover::after {
-        content: "~~~~~~~~~~~";
+        content: "<!-- home -->";
         position:absolute;
         top:10%;
         left:0;
@@ -143,6 +146,30 @@
         height:5px;
         background-color: #222222;
       }
+      footer {
+        background-color: #222222;
+        padding:50px;
+        color:blanchedAlmond;
+
+        display:flex;
+        box-sizing: border-box;
+      }
+      footer h5 {
+
+      }
+      .footer-left{
+        width:33%;
+      }
+      .footer-right{
+        width:66%;
+      }
+      #star {
+        color:red;
+        transition:2s ease;
+      }
+      #star:hover {
+        color:gold;
+      }
     </style>
     <meta charset="utf-8">
     <title>Navbar 1</title>
@@ -172,9 +199,27 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <br><hr><br>
       </section>
+      <br><br>
+      <section>
+        <h4>Header</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br><hr><br>
+      </section>
     </main>
     <footer>
-
+      <div class="footer-left">
+        <h5>Footer Links</h5>
+        <ul>
+          <li>Words</li>
+          <li>Words</li>
+          <li>Words</li>
+          <li>Words</li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h5>Footer</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </footer>
   </body>
 </html>
