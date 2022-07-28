@@ -1,0 +1,48 @@
+body {
+  background-color: blanchedalmond;
+  font-family:monospace;
+}
+main {
+  margin:100px;
+  border:2px solid black;
+}
+header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+nav {
+  border-bottom:2px solid black;
+}
+nav ul {
+  display:flex;
+  justify-content:space-around;
+  padding-left: 0px;
+
+  /* Border Canary: */
+  /* border:1px solid red; */
+}
+nav li {
+  list-style-type: none;
+  padding: 0px 10px;
+  color: black;
+}
+nav a {
+  color:#333333;
+  text-decoration: none;
+}
+nav a:hover {
+  color:darkred;
+  text-decoration:underline;
+  font-weight:bold;
+  font-style:italic;
+}
+section {
+  padding:25px;
+}
+.card {
+  margin:20px 0px;
+  border:2px dashed black;
+  padding:50px;
+}
