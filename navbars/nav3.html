@@ -3,8 +3,145 @@
   <head>
     <meta charset="utf-8">
     <title>Navbar 3 - Nicholas Parry - GDWD 107 - 07/27/22</title>
+    <style media="screen">
+      body {
+        margin:0;
+        background-color:#111111;
+        color:papayawhip;
+      }
+      header {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:50px;
+        border-bottom: 3px solid papayawhip;
+      }
+      header svg {
+        width: 15%;
+        fill:currentColor;
+      }
+      header h1 {
+        font-size: 60px;
+        text-align: center;
+      }
+      header div {
+        width:15%;
+      }
+      footer {
+        background-color: papayawhip;
+        color:#111111;
+        padding:50px;
+        margin-top:50px;
+        font-family: monospace;
+
+        display:flex;
+        justify-content: space-between;
+      }
+
+      footer h4 {
+        font-style: italic;
+        font-family: "Times New Roman";
+      }
+      .footer-left {
+        width:30%;
+      }
+      .footer-right {
+        width:69%;
+      }
+
+      .card {
+        display:block;
+        background-color: papayawhip;
+        border-radius: 5px;
+        color:#111111;
+        padding:25px;
+      }
+
+
+      /* NAVBAR STYLING::: ~~~~~~~~~~~~~~~~~~~~~~~ */
+      /* MAIN_LEFT = navbar */
+      /* MAIN_RIGHT = contect section */
+
+      main {
+        display:flex;
+
+        justify-content: space-between;
+      }
+      .main-left {
+        width:30%;
+        padding:50px;
+      }
+      .main-right{
+        width:69%;
+        padding:50px;
+      }
+
+       nav li {
+         list-style-type: none;
+       }
+       nav ul {
+         padding-left:0px;
+       }
+       nav a {
+         color:papayawhip;
+         text-decoration: none;
+         padding:5px;
+         width:100%;
+         display:block;
+         transition:0.5s;
+         font-weight: bold;
+         font-style: italic;
+       }
+       nav a:hover {
+         background-color: papayawhip;
+         color:#111111;
+       }
+
+    </style>
   </head>
   <body>
+    <header>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 133"><defs><style>.cls-1{fill:currentColor;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle class="cls-1" cx="66.5" cy="66.5" r="66.5"/></g></g></svg>
+      <h1>Sidebar & Co.</h1>
+      <div class="na"></div>
+    </header>
 
+    <main>
+      <nav class="main-left">
+        <ul>
+          <li> <a href="./index.html">Home</a> </li>
+          <li> <a href="./nav1.html">Nav1</a> </li>
+          <li> <a href="./nav2.html">Nav2</a> </li>
+          <li> <a href="./nav3.html">Nav3</a> </li>
+          <li> <a href="#">Sidebar</a> </li>
+          <li> <a href="#">Sidebar</a> </li>
+          <li> <a href="#">Sidebar</a> </li>
+        </ul>
+      </nav>
+      <section class="main-right">
+        <div class="card">
+          <h4>Section Header</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-left">
+        <h4>Footer Left!</h4>
+        <ul>
+          <li>Home</li>
+          <li>Contact</li>
+          <li>Contact</li>
+          <li>Contact</li>
+          <li>Contact</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h4>Footer, Right!?</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </footer>
   </body>
 </html>
