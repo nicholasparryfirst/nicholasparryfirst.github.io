@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="intro-wrapper">
+        <p id="intro" class="drop-through-text pos-absolute">
+            Welcome Home.
+        </p>
+        <a href="../index.html"><button>Go Back</button></a>
+        <button>Random</button>
+      </div>
+      <main>
+        <h1>Lesson Plan Portal</h1>
+        <div id="lesson-wrapper">
+
+        </div>
+      </main>
+
+      <script>
+        // 2020 Cohort
+        var startDate = new Date('July 18, 2022');
+        var currDate = new Date();
+        var dateDiff = Math.abs(currDate - startDate);
+        var daysFloat = dateDiff / (24 * 60 * 60 * 1000);
+        var days = daysFloat.toFixed(0);
+
+        console.log(days);
+    
+        var lessonWrapper = document.getElementById("lesson-wrapper");
+        var recapAnchor = document.createElement("a");
+        recapAnchor.innerHTML = "Word";
+        recapAnchor.href = "./2020/08-02-22.html";
+
+        if (startDate < currDate ) {
+            lessonWrapper.appendChild(recapAnchor)
+        }
+
+      </script>
+</body>
+</html>

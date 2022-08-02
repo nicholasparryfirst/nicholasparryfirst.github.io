@@ -1,0 +1,136 @@
+body {
+  margin:0;
+  font-family: "Ubuntu Mono", monospace;
+  color:#3333332;
+  border-color: #3333332;
+}
+
+header {
+  border-bottom: 2px solid #333333;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:50px;
+  font-family: "Abril Fatface", "Times New Roman", sans-serif;
+  background-color:#FFFFCC;
+  color:#333333;
+}
+
+nav {
+  border-bottom: 2px solid #333333;
+  background-color:#FFFFCC;
+  display:sticky;
+  top:0px;
+}
+
+nav ul {
+  display:flex;
+  padding-left:0;
+  margin:0px;
+}
+
+nav li {
+  list-style-type: none;
+}
+nav a {
+  color:darkred;
+  text-decoration: none;
+  padding:5px 20px;
+  padding-left:2.5px;
+  display:inline-block;
+}
+nav a::before {
+  content:"|";
+  padding-right:5px;
+}
+nav a:hover {
+  background-color: darkred;
+  color:#FFFFCC;
+}
+
+.site_logo {
+  width:15%;
+}
+.site_title {
+  font-size: 4em;
+  font-style: italic;
+}
+.site_logo:hover,.site_title:hover  {
+  color:black;
+  text-decoration: underline;
+}
+main {
+  padding: 25px 15%;
+}
+
+/* Cards: */
+
+.card {
+  background-color: #FFFFCC;
+  border:2px solid #333333;
+  padding:15px;
+  color:#333333;
+  box-shadow: 2px 3px 1px 1px rgba(0,0,0,0.3);
+}
+.card-header {
+  font-size: 42pt;
+  font-family: "Abril Display";
+  margin:0;
+  text-align: center;
+  padding:25px;
+  border-bottom: 1px solid #333333;
+  margin-bottom:25px;
+  font-style: italic;
+  font-weight: bold;
+}
+.card-content {
+  padding:20px;
+}
+
+
+/* Footer ~~~~~~~ */
+.footer-hat {
+  height:30px;
+  background-color: #FFFFCC;
+  border-top:2px solid #333333;
+}
+footer {
+  background-color: #FFFFCC;
+  padding:25px;
+  border-top:2px dashed #333333;
+  box-sizing: border-box;
+  display:flex;
+}
+.footer-left {
+  flex: 1;
+  margin-bottom:50px;
+}
+.footer-right {
+  flex:3;
+}
+
+.footer-feet {
+  background-color: #FFFFCC;
+  height:20px;
+  border-top: 2px dashed #333333;
+
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px;
+  font-size: 8pt;
+}
+
+
+/* Special typography */
+
+.dropcap {
+  float:left;
+  font-size:42pt;
+  margin-top: -5px;
+  line-height: 0.65;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-family: "Abril Text";
+  font-weight: bold;
+}
