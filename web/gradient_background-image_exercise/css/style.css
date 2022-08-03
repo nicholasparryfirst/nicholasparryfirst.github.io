@@ -1,0 +1,40 @@
+body {
+  margin:0;
+
+}
+main {
+  height:90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), linear-gradient( to bottom, red 40%, orange 40%, orange 50%, yellow 50%, yellow 60%, green 60%, green 70%, blue 70%, blue 80%, indigo 80%, indigo 90%, violet 90%, violet 100%);
+  background-size: 100% 400%;
+  background-position:top;
+  border:2px solid red;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 4s ease;
+}
+main:hover {
+  background-position: bottom;
+}
+h1 {
+  color:white;
+  font-family: sans-serif;
+  font-size: 7em;
+  /* display:flex; */
+}
+
+header{
+  /* Default CSS */
+  height: 250px;
+  display: flex;
+  align-items: center;
+  padding:25px;
+
+  /* Background image */
+  background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)),
+              url("../assets/woah.jpg");
+  background-size:200% 200%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}

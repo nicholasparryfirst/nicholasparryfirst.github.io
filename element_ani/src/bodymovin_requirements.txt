@@ -1,0 +1,12 @@
+Bodymovin Link:
+  https://aescripts.com/bodymovin/
+
+ZXP Installer:
+  https://aescripts.com/learn/zxp-installer/
+
+Steps:
+  1) Install ZXP Installer *for this user only*
+  2) Choose option to "Install for this user only" on lab computers
+  3) Drag bodymovin.zxp to the ZXP Installer window
+  4) Run installer
+  5) Bodymovin is found in After Effects under Window>Extensions

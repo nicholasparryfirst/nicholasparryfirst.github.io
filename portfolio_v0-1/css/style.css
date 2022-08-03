@@ -15,7 +15,9 @@ header {
   background-color:#FFFFCC;
   color:#333333;
 }
-
+.header-top{
+  width:15%;
+}
 nav {
   border-bottom: 2px solid #333333;
   background-color:#FFFFCC;
@@ -51,13 +53,21 @@ nav a:hover {
 }
 
 .site_logo {
-  width:15%;
+  width:100%;
 }
 .site_title {
   font-size: 4em;
   font-style: italic;
+  margin-bottom:0;
 }
-.site_logo:hover,.site_title:hover  {
+.site_quote {
+  font-size: 1em;
+  text-align: right;
+  font-style: italic;
+  font-weight: normal;
+  margin:0px;
+}
+.site_logo:hover,.site_title:hover,.site_quote:hover {
   color:black;
   cursor:pointer;
 }
@@ -74,6 +84,8 @@ main {
   background-size: cover;
   background-position: center;
   border-bottom:2px solid #333333;
+  box-shadow: 0px 3px 3px 0px rgb(0,0,0,0.3);
+
 }
 .hero-text {
   font-family: "Abril Display", "Times New Roman", sans-serif;
@@ -81,6 +93,7 @@ main {
   font-weight: bold;
   font-style: italic;
   color:#FFFFCC;
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
 }
 
 /* Cards: */
@@ -91,6 +104,7 @@ main {
   padding:15px;
   color:#333333;
   box-shadow: 2px 3px 1px 1px rgba(0,0,0,0.3);
+  margin:50px 0px;
 }
 .card-header {
   font-size: 42pt;

@@ -1,0 +1,13 @@
+body {
+  margin:0;
+
+}
+NAV UL {
+  display:flex;
+  padding-left:0px;
+}
+
+nav li {
+  margin-right:25px;
+  list-style-type: none;
+}
