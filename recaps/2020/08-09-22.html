@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recap</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal-timer.css">
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+    <div class="intro-wrapper">
+      <p id="intro" class="drop-through-text pos-absolute">
+        Welcome back, 6007!
+      </p>
+    </div>
+    <main>
+      <div class="header-wrapper" id="slidey">
+        <h1>The Daily Read:</h1>
+        <h4 style="margin:0;"><span id="date"></span> - Cohort 2020 + - GDWD 107</h4>
+        <h4>Graphic Design & Web Development: Web Development Fundamentals</h4>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="list-wrapper">
+        <h2 class="list-header">Big Ol' Knowledge Recap:</h2>
+        <ul>
+          <li>W3C</li>
+          <li>HTML</li>
+          <li>CSS</li>
+
+          <li>HTML Elements</li>
+          <li>HTML Attributes</li>
+          <li>The DOM</li>
+          <li>Browsers</li>
+          <li>Server / Client Relationship</li>
+          <li>Github</li>
+          <li>Code skeleton</li>
+          <a href="../../ex/blockvsinline/index.html"><li>Block Vs. Inline</li></a>
+          <li>Normal Flow</li>
+          <li>Containers</li>
+          <li>Box Model</li>
+          <li>Margin / Padding / CSS Shorthand</li>
+          <li>Classes</li>
+          <li>Paths & Addresses</li>
+          <li>Semantic Tags</li>
+          <a href="../../ex/floatlayout/index.html"><li>Layout Elements / Site Scaffolding</li></a>
+          <a href="https://www.w3.org/standards/webdesign/accessibility"><li>Accessibility</li></a>
+          <li>Validators</li>
+          <li>Flexboxes</li>
+          <li>Portfolio</li>
+        </ul>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="list-wrapper">
+        <h2 class="list-header">Today's to-do:</h2>
+        <ul>
+          <a href="https://fonts.google.com/"><li>Google Fonts</li></a>
+          <br>
+          <a href="https://first.instructure.com/courses/1786/assignments/46360?module_item_id=318102"><li>Float & Clear</li></a>
+          <br>
+          <a href="https://first.instructure.com/courses/1786/assignments/46329?module_item_id=318113"> <li> Tables</li></a>
+        </ul>
+      </div>
+
+      <div class="spacer"></div>
+
+      <hr>
+
+      <div class="break-modal-wrapper">
+        <input id="hr-in" type="text" name="hour" value="00">
+          <span id="time-delim">:</span>
+        <input id="mn-in" type="text" name="minute" value="00">
+        <button class="button break-button" type="button" name="break" onclick="revealModal(), displayTime()">Start Break</button>
+      </div>
+    </main>
+    <div class="closing-container">
+      <p class="drop-through-text">Thanks for stopping by!</p>
+    </div>
+
+    <div id="break-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-close" onclick="closeModal()"><ion-icon name="close"></ion-icon></div>
+
+        <!-- <img class="modal-image" src="https://i.kym-cdn.com/photos/images/newsfeed/001/713/929/f39.png_large" alt="Graphic design and coding is shit poster"> -->
+        <hr class="time-bar">
+        <div class="modal-text">
+          <div class="drop-through-text">
+            <p style="text-align:center;">It's Break Time.</p>
+          </div>
+        </div>
+        <div class="modal-text">
+          <div class="time-header dark-accent-text">
+            <p>Please return at:</p>
+          </div>
+          <div class="time-wrapper light-accent-text">
+            <span id="hr">00</span><span class="symb">:</span><span id="mn">00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        // SLIDE EFFECT:
+        const slide = document.getElementById('slidey');
+        let sectionHeaders = document.getElementsByClassName('list-header');
+
+        function slideBkgrnd() {
+          slide.classList.add("restore_slide");
+        }
+        function blackTxt() {
+          slide.classList.add("black-txt");
+        }
+        function listHeaderTransition() {
+          l = sectionHeaders.length;
+          for (i=0;i<sectionHeaders.length;i++) {
+            sectionHeaders[i].classList.add("black-txt");
+          }
+        }
+
+        setTimeout(slideBkgrnd, 2000);
+        setTimeout(blackTxt, 6000);
+        setTimeout(listHeaderTransition, 8000);
+
+        // --------------------------------------------------------- |
+
+
+        // Break Modal Popup
+        const breakModal = document.getElementById("break-modal");
+
+        function revealModal(){
+          breakModal.classList.add("reveal");
+        }
+        function closeModal(){
+          breakModal.classList.remove("reveal");
+        }
+
+          // BREAK MODAL TIMER:
+        function displayTime(){
+          let hourIn = document.getElementById("hr-in").value;
+          let minuteIn = document.getElementById("mn-in").value;
+          console.log(hourIn + " " + minuteIn);
+          let hourOut = document.getElementById("hr");
+          let minuteOut = document.getElementById("mn");
+
+          hourOut.innerHTML = hourIn;
+          minuteOut.innerHTML = minuteIn;
+        }
+
+
+        // DATE GRABBA:
+
+          let dateEl = document.getElementById("date");
+
+          var path = window. location. pathname;
+          var page = path. split("/"). pop();
+          var fullDate = page.substring(0,8);
+          const d = new Date(fullDate);
+
+          var pgMo =  page.substring(0, 2);
+          var pgDy =  page.substring(3, 5);
+          var pgYr =  page.substring(6, 8);
+          var weekday = d.getDay();
+
+          console. log( fullDate);
+
+            if (weekday != 0) {
+              if(weekday == 1) {
+                weekday = "Monday";
+              }
+              if(weekday == 2) {
+                weekday = "Tuesday";
+              }
+              if(weekday == 3) {
+                weekday = "Wednesday";
+              }
+              if(weekday == 4) {
+                weekday = "Thursday";
+              }
+              if(weekday == 5) {
+                weekday = "Friday";
+              }
+              if(weekday == 6) {
+                weekday = "Saturday";
+              }
+              if(weekday == 7) {
+                weekday = "Sunday";
+              }
+            }
+
+          dateEl.innerHTML = weekday + " - " + pgMo + "/" + pgDy + "/" + pgYr;
+
+    </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  </body>
+</html>
