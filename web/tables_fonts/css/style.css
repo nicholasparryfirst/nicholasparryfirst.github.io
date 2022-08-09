@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Pacifico&display=swap');
+
+body {
+  margin:0;
+  font-family:"Comfortaa";
+}
+table {
+  width:80%;
+  margin:auto;
+  font-family:"comfortaa";
+  border-collapse: collapse;
+  border:5px solid maroon;
+}
+th {
+  background-color: blanchedalmond;
+  color:maroon;
+  text-align:left;
+  font-size: 16pt;
+}
+tr {
+  background: aliceblue;
+  border-bottom: 3px solid maroon;
+}
+th,td {
+  padding:5px;
+}
+tr:hover {
+  background: maroon;
+  color:blanchedalmond;
+}
+td {
+  /* border: 2px solid maroon; */
+}
+/* col {
+  color:red;
+} */
+
+#c {
+  background:chartreuse;
+}
+#d {
+  color:white;
+}
+
+/* Site Styling: */
+
+header {
+  background: radial-gradient(chocolate, blanchedalmond);
+  padding:20px;
+  background-position: left top;
+  background-size: 200% 200%;
+  color:darkblue;
+}
+
+nav {
+  background-color: darkblue;
+}
+nav ul {
+  display:flex;
+  padding:20px;
+  margin:auto;
+}
+
+nav a {
+  color:blanchedalmond;
+}
+
+nav li {
+  margin-right: 20px;
+  list-style-type:none;
+}
