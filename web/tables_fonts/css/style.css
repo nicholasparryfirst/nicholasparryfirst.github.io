@@ -50,6 +50,15 @@ header {
   background-position: left top;
   background-size: 200% 200%;
   color:darkblue;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo {
+  width:25%;
+}
+#gitti {
+  width:100%;
 }
 
 nav {
@@ -68,4 +77,31 @@ nav a {
 nav li {
   margin-right: 20px;
   list-style-type:none;
+}
+
+footer {
+  color:darkblue;
+
+}
+footer ion-icon {
+  width:100px;
+  height:100px;
+}
+#insta:hover {
+  color:fuchsia;
+}
+#snap:hover {
+  color:gold;
+}
+#face:hover {
+  color:cyan;
+}
+
+main  {
+  width:80%;
+  margin:auto;
+  background-color:orange;
+}
+body {
+  background-color: pink;;
 }
