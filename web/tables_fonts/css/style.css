@@ -21,7 +21,7 @@ tr {
   background: aliceblue;
   border-bottom: 3px solid maroon;
 }
-th,td {
+th {
   padding:5px;
 }
 tr:hover {
@@ -29,11 +29,8 @@ tr:hover {
   color:blanchedalmond;
 }
 td {
-  /* border: 2px solid maroon; */
+  padding:5px;
 }
-/* col {
-  color:red;
-} */
 
 #c {
   background:chartreuse;
@@ -81,7 +78,7 @@ nav li {
 
 footer {
   color:darkblue;
-
+  background-color: white;
 }
 footer ion-icon {
   width:100px;
@@ -94,7 +91,7 @@ footer ion-icon {
   color:gold;
 }
 #face:hover {
-  color:cyan;
+  color:cornflowerblue;
 }
 
 main  {
