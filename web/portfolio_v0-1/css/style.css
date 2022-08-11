@@ -1,8 +1,10 @@
+/* MAIN BRAND STYLE */
+
 body {
   margin:0;
   font-family: "Ubuntu Mono", monospace;
-  color:#3333332;
-  border-color: #3333332;
+  color:#333333;
+  border-color: #333333;
 }
 
 header {

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        background-color:black;
+      }
+      svg{
+        width:50%;
+        margin:auto;
+      }
+      svg .cls-1 {
+        color:white;
+        text-shadow: 3px 3px 3px red;
+        /* filter: drop-shadow(-3px -5px 2px rgb(255 0 0 / 0.4) ); */
+        transition:2s;
+      }
+      svg .cls-2 {
+        color: rgb(240, 95, 138);
+      }
+      svg:hover .cls-1 {
+        color:rgba(255,255,255,0.8);
+        filter:url(#turbulent);
+        filter:url(#turbulentBlur);
+
+      }
+      svg:hover .cls-2 {
+        color:rgb(240, 95, 138,0.8);
+        filter:url(#turbulent);
+        filter:url(#blur), url(#turbulent);
+
+      }
+    </style>
+  </head>
+  <body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211.71 209.55">
+      <filter id="turbulent" >
+        <feTurbulence baseFrequency="1 1" type="fractalNoise"/>
+      </filter>
+      <filter id="blur" >
+        <feGaussianBlur stdDeviation="1 0" />
+      </filter>
+      <filter id="turbulentBlur" >
+        <feTurbulence baseFrequency="1 1" />
+        <feGaussianBlur stdDeviation="1 3" />
+
+      </filter>
+
+      <defs><style>.cls-1{fill:currentColor;}.cls-2{fill:currentColor;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" x="9.32" y="81.2" width="45" height="45" transform="translate(-63.63 52.17) rotate(-44.58)"/><rect class="cls-1" x="82.27" y="9.32" width="45" height="45" transform="translate(7.81 82.69) rotate(-44.58)"/><rect class="cls-1" x="82.27" y="155.23" width="45" height="45" transform="translate(-94.6 124.67) rotate(-44.58)"/><rect class="cls-1" x="157.39" y="81.2" width="45" height="45" transform="translate(-21.03 156.1) rotate(-44.58)"/><rect class="cls-2" x="111.41" y="88.97" width="29.46" height="29.46" transform="translate(-36.49 118.37) rotate(-44.58)"/><rect class="cls-2" x="69.74" y="88.97" width="29.46" height="29.46" transform="translate(-48.48 89.13) rotate(-44.58)"/></g></g>
+    </svg>
+
+
+  </body>
+</html>
