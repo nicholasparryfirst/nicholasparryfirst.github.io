@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #file-button {
+        background: linear-gradient(orange, gold);
+        border: 10px solid black;
+        border-radius:5px;
+        color:white;
+        font-weight: bold;
+        padding:20px;
+        font-size: 30pt;
+      }
+      #file-button:hover {
+        background-color: white;
+        color:black;
+        cursor:pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+
+    </header>
+    <main>
+
+      <div class="hero">
+
+          <video height="960px" width="540px" autoplay="true" loop plays-inline>
+            <source src="./assets/coffee.mp4" type="video/mp4"/>
+            <source src="./assets/coffee.ogg" type="video/ogg"/>
+          </video>
+
+      </div>
+      <div class="file-container">
+        <a href="./assets/illustrator.ai"><button id="file-button">Click Me</button></a>
+      </div>
+      <div class="audio-container">
+
+        <audio controls loop>
+          <source src="./assets/nitroGirls2.mp3" type="audio/mp3"/>
+        </audio>
+
+      </div>
+    </main>
+
+  </body>
+</html>
