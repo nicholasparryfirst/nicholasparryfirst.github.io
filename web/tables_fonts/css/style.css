@@ -3,6 +3,8 @@
 body {
   margin:0;
   font-family:"Comfortaa";
+  width:100%;
+  overflow-x: hidden;
 }
 table {
   width:80%;
@@ -45,11 +47,15 @@ header {
   background: radial-gradient(chocolate, blanchedalmond);
   padding:20px;
   background-position: left top;
-  background-size: 200% 200%;
+  background-size: 350% 300%;
   color:darkblue;
   display:flex;
   align-items: center;
   justify-content: space-between;
+  transition: 1s ease;
+}
+header:hover {
+  background-position: right top;
 }
 #logo {
   width:25%;

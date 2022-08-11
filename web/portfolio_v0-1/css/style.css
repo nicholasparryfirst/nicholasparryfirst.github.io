@@ -1,3 +1,7 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
 /* MAIN BRAND STYLE */
 
 body {
@@ -82,7 +86,7 @@ main {
   display:flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../assets/bkgrnd.jpg");
+  background-image: url("../assets/branding/bkgrnd.jpg");
   background-size: cover;
   background-position: center;
   border-bottom:2px solid #333333;

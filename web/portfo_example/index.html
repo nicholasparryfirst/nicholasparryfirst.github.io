@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body{
+        margin:0;
+        color:#222;
+        width:100%;
+        overflow: hidden;
+      }
+      .hero {
+        max-height:500px;
+        overflow:hidden;
+        border-bottom:5px solid black;
+      }
+      #splash-video {
+        /* position:relative; */
+        /* width:100%; */
+        height: 1000px;
+        margin:0px;
+        /* max-height:600px; */
+      }
+      .hero-text {
+        position:relative;
+        top: -300px;
+        /* left:50%; */
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        /* border: 2px solid red; */
+      }
+
+      .hero-text h1 {
+        color:#222;
+        font-size: 6em;
+        margin:0;
+        text-shadow: 2px 2px 5px darkslategrey;
+        transition:2s;
+      }
+      .hero-text h3 {
+        margin:0;
+        margin-left:30px;
+        text-shadow: 1px 1px 3px darkslategrey;
+        transition: 2s;
+      }
+      .hero-text h3:hover, .hero-text h1:hover {
+        text-shadow: 2px 2px 5px firebrick;
+      }
+      .card {
+        width:75%;
+        padding:20px;
+        margin:100px auto;
+      }
+      .fluid {
+        width:100%;
+      }
+      .fancy {
+        background-color: black;
+        color:white;
+        border-radius: 10px;
+      }
+      nav {
+        border-bottom:5px solid black;
+        position: sticky;
+        z-index: 3;
+        top:0px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+      }
+      nav ul {
+        padding:0px;
+        margin:0px;
+        display:flex;
+        justify-content: center;
+      }
+      nav li {
+        list-style-type: none;
+      }
+      nav a {
+        padding:10px 40px;
+        color:inherit;
+        text-decoration: none;
+        font-variant-caps: small-caps;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      nav .dot {
+        width:50px;
+        height:50px;
+        background-color: black;
+      }
+      nav .dotleft {
+        border-radius: 0% 50% 50% 0%;
+      }
+      nav .dotright {
+        border-radius: 50% 00% 00% 50%;
+      }
+      nav a:hover {
+        color:firebrick;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="dot dotleft"></div>
+      <ul>
+        <a href="#"><li>Portfolio</li></a>
+        <a href="#"><li>Development</li></a>
+        <a href="#"><li>Designs</li></a>
+      </ul>
+      <div class="dot dotright"></div>
+    </nav>
+    <header>
+      <div class="hero">
+        <video id="splash-video" autoplay muted loop>
+          <source src="./assets/waves.mp4" type="video/mp4">
+        </video>  
+      </div>
+
+      <div class="hero-text">
+        <h1>Words</h1>
+        <h3>Some other words</h3>
+      </div>  
+    </header>
+    <main>
+
+      <div class="card fancy">
+        <h2>Standin paragraph section</h2>
+        <h4>Hello</h4>
+        <img src="" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rem eius perspiciatis vel reiciendis, dolores omnis in tempora ab amet beatae necessitatibus voluptates alias? Harum magnam placeat illum quis cumque?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ex reprehenderit ipsum molestiae, quam asperiores nam, laboriosam autem, maiores illum voluptatum eum deleniti libero fuga ipsam est debitis maxime laudantium.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ex reprehenderit ipsum molestiae, quam asperiores nam, laboriosam autem, maiores illum voluptatum eum deleniti libero fuga ipsam est debitis maxime laudantium.</p>
+      </div>
+
+      <div class="card fluid">
+        <h4>Hello</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rem eius perspiciatis vel reiciendis, dolores omnis in tempora ab amet beatae necessitatibus voluptates alias? Harum magnam placeat illum quis cumque?</p>
+      </div>
+
+      <div class="card fancy">
+        <h4>Hello</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rem eius perspiciatis vel reiciendis, dolores omnis in tempora ab amet beatae necessitatibus voluptates alias? Harum magnam placeat illum quis cumque?</p>
+      </div>
+
+      <div class="card">
+        <h4>Hello</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rem eius perspiciatis vel reiciendis, dolores omnis in tempora ab amet beatae necessitatibus voluptates alias? Harum magnam placeat illum quis cumque?</p>
+      </div>
+
+    </main>
+  </body>
+</html>
