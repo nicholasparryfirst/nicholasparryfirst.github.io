@@ -143,10 +143,15 @@ nav a:hover {
 
 /* MAIN Content */
 main {
-  padding: 25px 15%;
+  padding: 25px 0px;
 }
 
 /* BOOTSTRAP */
+/* carousel */
+.carousel-wrapper {
+  width:70%;
+  margin:auto;
+}
 /* collapsing grid */
 .collapsing-grid-wrapper {
   margin: 200px 0px;
@@ -182,6 +187,10 @@ main {
   font-family: "Bebas Neue";
   font-size: 4em;
 }
+.mixed-height-grid {
+  width:70%;
+  margin: 50px auto;
+}
 
 /* contents: */
 
@@ -191,7 +200,7 @@ main {
   padding:15px;
   color:#2e4c83;
   box-shadow: 2px 3px 1px 1px rgba(0,0,0,0.3);
-  margin:50px 0px;
+  margin:50px 15%;
 }
 .content-header {
   font-size: 42pt;
@@ -214,6 +223,23 @@ main {
 }
 .content-content {
   padding:20px;
+}
+.content-fluid {
+ padding:15px 15%;
+ margin: 0px;
+ background: white;
+ border-top:2px solid #2e4c83;
+ border-bottom:2px solid #2e4c83;
+}
+
+/* content parallax */
+.parallax-bg {
+  height:400px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.parallax-abstract {
+  background-image: url("../assets/branding/abstract.jpg");
 }
 
 
