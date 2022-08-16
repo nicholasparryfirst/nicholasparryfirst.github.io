@@ -109,3 +109,22 @@ footer {
 .col img {
     width:100%;
 }
+
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: blanchedalmond;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-wrapper {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .grid-wrapper {
+        grid-template-columns: auto auto;
+    }
+}
