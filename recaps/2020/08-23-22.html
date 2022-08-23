@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recap</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal-timer.css">
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+    <div class="intro-wrapper">
+      <p id="intro" class="drop-through-text pos-absolute">
+        Do it for George.
+      </p>
+    </div>
+    <main>
+      <div class="header-wrapper" id="slidey">
+        <h1>The Daily Bread:</h1>
+        <h4 style="margin:0;"><span id="date"></span> - Cohort 2020 - GDWD 107</h4>
+        <h4>Graphic Design & Web Development: Web Development Fundamentals</h4>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="list-wrapper">
+        <h2 class="list-header">The Recap:</h2>
+        <ul>
+          <li>Icons</li>
+          <br>
+          <a href="https://getbootstrap.com/">
+            <li>Bootstrap</li>
+          </a>
+          <ul>
+            <li>Initializing Bootstrap</li>
+            <li>Bootstrap Grid</li>
+            <li>Grid format</li>
+            <li>Responsiveness</li>
+          </ul>
+          <br>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"> <li>Flexboxes</li></a>
+          <ul>
+            <li>display:flex;</li>
+            <li>justify-content</li>
+            <li>align-items</li>
+            <li>flex-wrap</li>
+            <li>flex-direction</li>
+            <br>
+            <li>flex</li>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>Flex-basis</li>
+          </ul>
+          <br>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids">
+            <li>Vanilla CSS Grids:</li>
+          </a>
+          <ul>
+            <li>display:grid;</li>
+            <li>grid-template-columns:;</li>
+            <li>grid-template-rows:;</li>
+            <li>column-gap:;</li>
+            <li>row-gap:;</li>
+            <li>grid-gap:;</li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="list-wrapper">
+        <h2 class="list-header">Today's to-do:</h2>
+        <ul>
+          <a href="https://www.w3.org/standards/webdesign/accessibility">
+            <li>Accessibility</li>
+          </a>
+          <ul>
+            <a href="/assets/Screen Shot 2022-08-22 at 7.33.44 AM.png">
+            <li>ARIA</li>
+            </a>
+            <a href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn/related?hl=en-US">
+              <li>ChromeVox</li>
+            </a>
+          </ul>
+          <br>
+          <a href="https://first.instructure.com/courses/1786/assignments/46420?module_item_id=318187">
+            <li>George R. R. Martin Site</li>
+          </a>
+          <br>
+          <a href="https://first.instructure.com/courses/1786/assignments/46372?module_item_id=318173"> 
+            <li>Portfolio Check-in 3</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="spacer"></div>
+
+      <hr>
+
+      <div class="break-modal-wrapper">
+        <input id="hr-in" type="text" name="hour" value="00">
+          <span id="time-delim">:</span>
+        <input id="mn-in" type="text" name="minute" value="00">
+        <button class="button break-button" type="button" name="break" onclick="revealModal(), displayTime()">Start Break</button>
+      </div>
+    </main>
+    <div class="closing-container">
+      <p class="drop-through-text">Thanks for stopping by!</p>
+    </div>
+
+    <div id="break-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-close" onclick="closeModal()"><ion-icon name="close"></ion-icon></div>
+
+        <!-- <img class="modal-image" src="https://i.kym-cdn.com/photos/images/newsfeed/001/713/929/f39.png_large" alt="Graphic design and coding is shit poster"> -->
+        <hr class="time-bar">
+        <div class="modal-text">
+          <div class="drop-through-text">
+            <p style="text-align:center;">It's Break Time.</p>
+          </div>
+        </div>
+        <div class="modal-text">
+          <div class="time-header dark-accent-text">
+            <p>Please return at:</p>
+          </div>
+          <div class="time-wrapper light-accent-text">
+            <span id="hr">00</span><span class="symb">:</span><span id="mn">00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        // SLIDE EFFECT:
+        const slide = document.getElementById('slidey');
+        let sectionHeaders = document.getElementsByClassName('list-header');
+
+        function slideBkgrnd() {
+          slide.classList.add("restore_slide");
+        }
+        function blackTxt() {
+          slide.classList.add("black-txt");
+        }
+        function listHeaderTransition() {
+          l = sectionHeaders.length;
+          for (i=0;i<sectionHeaders.length;i++) {
+            sectionHeaders[i].classList.add("black-txt");
+          }
+        }
+
+        setTimeout(slideBkgrnd, 2000);
+        setTimeout(blackTxt, 6000);
+        setTimeout(listHeaderTransition, 8000);
+
+        // --------------------------------------------------------- |
+
+
+        // Break Modal Popup
+        const breakModal = document.getElementById("break-modal");
+
+        function revealModal(){
+          breakModal.classList.add("reveal");
+        }
+        function closeModal(){
+          breakModal.classList.remove("reveal");
+        }
+
+          // BREAK MODAL TIMER:
+        function displayTime(){
+          let hourIn = document.getElementById("hr-in").value;
+          let minuteIn = document.getElementById("mn-in").value;
+          console.log(hourIn + " " + minuteIn);
+          let hourOut = document.getElementById("hr");
+          let minuteOut = document.getElementById("mn");
+
+          hourOut.innerHTML = hourIn;
+          minuteOut.innerHTML = minuteIn;
+        }
+
+
+        // DATE GRABBA:
+
+          let dateEl = document.getElementById("date");
+
+          var path = window. location. pathname;
+          var page = path. split("/"). pop();
+          var fullDate = page.substring(0,8);
+          const d = new Date(fullDate);
+
+          var pgMo =  page.substring(0, 2);
+          var pgDy =  page.substring(3, 5);
+          var pgYr =  page.substring(6, 8);
+          var weekday = d.getDay();
+
+          console. log( fullDate);
+
+            if (weekday != 0) {
+              if(weekday == 1) {
+                weekday = "Monday";
+              }
+              if(weekday == 2) {
+                weekday = "Tuesday";
+              }
+              if(weekday == 3) {
+                weekday = "Wednesday";
+              }
+              if(weekday == 4) {
+                weekday = "Thursday";
+              }
+              if(weekday == 5) {
+                weekday = "Friday";
+              }
+              if(weekday == 6) {
+                weekday = "Saturday";
+              }
+              if(weekday == 7) {
+                weekday = "Sunday";
+              }
+            }
+
+          dateEl.innerHTML = weekday + " - " + pgMo + "/" + pgDy + "/" + pgYr;
+
+    </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  </body>
+</html>

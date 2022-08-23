@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+
+body {
+  margin:0;
+  font-family: "Merriweather", serif;
+  background-color: black;
+  color:blanchedalmond;
+}
+
+
+header {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: bolder;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  height:200px;
+  padding:20px;
+}
+
+#header_logo {
+  fill:currentColor;
+  color:blanchedAlmond;
+  width:10%;
+  min-width: 70px;
+  margin-right: 20px;
+}
+
+nav  {
+  padding:20px;
+}
+
+nav ul {
+  padding-left:0;
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  margin:auto;
+}
+
+nav li {
+  list-style-type: none;
+  font-size: 8pt;
+  font-variant-caps: all-small-caps;
+}
+
+nav a {
+  color:blanchedalmond;
+  text-decoration-color: transparent;
+}
+
+nav a:hover {
+  color:rgb(171, 48, 48);
+}
+
+main {
+  background-image: url("../assets/dragon_rd.jpg");
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
