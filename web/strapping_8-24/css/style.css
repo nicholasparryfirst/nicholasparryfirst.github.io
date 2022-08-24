@@ -1,0 +1,65 @@
+body {
+  margin:0;
+  background-color: #111;
+  color:blanchedalmond;
+}
+
+
+
+.component-wrapper {
+  border:5px solid blue;
+
+  display:flex;
+}
+
+.component-left {
+  border:5px solid green;
+  width:66%;
+}
+.component-right {
+  border: 5px solid red;
+  width:33%;
+}
+
+.content-card {
+  border:2px solid pink;
+  padding:10px;
+}
+ 
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:20px;
+  background-color: blanchedalmond;
+  flex-wrap: wrap;
+  color:#111;
+}
+
+nav {
+  display:none;
+  width:100%;
+}
+nav ul{
+  display:flex;
+  justify-content: space-around;
+}
+.nav-icon{
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+@media only screen and (min-width:900px) {
+  nav {
+    display:block;
+  }
+  .nav-icon {
+    display:none;
+  }
+  
+  .header-top {
+    text-align: center;
+    width:100%;
+  }
+}
