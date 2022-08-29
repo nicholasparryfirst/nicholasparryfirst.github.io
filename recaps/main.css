@@ -8,10 +8,11 @@
 }
 
 body {
-  background-color: rgba(250,250,255,1);
+  /* background-color: rgba(250,250,255,1); */
   padding:100px;
   padding-top:400px;
   font-family: "Nunito", sans-serif;
+  background: url("../../../assets/marble.jpg");
 }
 main {
   background-color: rgba(250,250,255,1);

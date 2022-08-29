@@ -6,6 +6,8 @@ body {
   padding:100px;
   padding-top:400px;
   font-family: "Nunito", sans-serif;
+  /* background: url("../../../assets/marble.jpg"), rgba(250,250,255,0.9); */
+  background-size: cover;
 }
 main {
   background-color: rgba(250,250,255,1);
