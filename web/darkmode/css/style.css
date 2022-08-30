@@ -16,3 +16,22 @@ header {
   display:flex;
   justify-content: space-between;
 }
+
+
+@media only screen and (max-width:580px) {
+  /* nav a {
+    font-size: 12px;
+  } */
+}
+
+@media only screen and (min-width: 1500px) {
+
+  nav ul {
+    width:65%;
+  }
+
+  nav a {
+    font-size: 24pt;
+  }
+
+}
