@@ -128,3 +128,12 @@ footer {
         grid-template-columns: auto auto;
     }
 }
+
+
+#myPrev_Icon {
+    color:blue;
+}
+
+.carousel-control-next span {
+    fill:currentColor;
+}
