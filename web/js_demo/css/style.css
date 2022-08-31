@@ -13,7 +13,7 @@ body {
   width:90%;
   border: 5px solid #e1a177;
   margin:5% auto;
-  border-radius: 15px;;
+  border-radius: 15px;
 }
 
 /* HEADER CSS */
@@ -35,6 +35,7 @@ header {
 .header_right {
   width:25%;
   min-width: 60px;
+  max-width: 200px;
 }
 .header_right img {
   width:100%;
@@ -83,7 +84,7 @@ main  {
 /* FOOTER CSS */
 footer {
   display:flex;
-  background-color:black;
+  background-color:#e1a177;
   color:white;
   border-radius: 0px 0px 10px 10px;
   border-top: 5px solid #e1a177;
@@ -104,6 +105,8 @@ footer a {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
+  background-color: white;
+  color:#e1a177;
 }
 .footer_left p {
   font-size: 10pt;
@@ -116,11 +119,13 @@ footer a {
 }
 .footer_text {
   width:100%;
+  color:black;
 }
 
 .footer_center{
   flex:1;
   background-color: #e1a177;
+  color:white;
 }
 .footer_center a {
   font-weight: bold;
