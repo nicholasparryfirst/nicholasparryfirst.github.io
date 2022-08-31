@@ -40,14 +40,35 @@
       <main>
         <!-- Main Content Wrapper -->
 
-        <div class="about_button_wrapper">
+        <div class="time_wrapper">
+          <div class="time_wrapper_internal">
+            <h4>Our Big News:</h4>
+            <p>Revealing soon!</p>
+            <p id="date_element"></p>
+  
+          </div>
+        </div>
+
+
+        <div class="about_button_wrapper internal_content">
           <h2>Click here to find out about:</h2>
-          <button class="about_button">About</button>
+          <button class="about_button" onclick="toggleContent()">About</button>
           <p class="about_text" id="js_demo">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis soluta quod distinctio assumenda qui iste ipsam numquam? Aut, aliquid commodi in beatae dicta eligendi consequatur alias accusamus autem itaque!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi molestias dolorum quae iure ullam quo sint rerum deleniti, saepe, perferendis voluptatum omnis dignissimos repellendus est! Quaerat sunt illo illum id!
           </p>
         </div>
 
+          <div class="internal_content">
+            <h4>Hello World</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi error ducimus, vero veniam deleniti sequi ut illo enim. Est eveniet repellat ipsam molestias maiores distinctio cumque praesentium et fugiat.</p>
+          </div>
+
+          <div class="internal_content">
+            <h2>World</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid itaque quidem voluptatibus nesciunt in iure ratione provident cupiditate deserunt. Incidunt iste similique voluptatibus ut temporibus distinctio quidem assumenda blanditiis aut?</p>
+          </div>
+       
       </main>
       <footer>
         <div class="footer_left">
@@ -98,11 +119,21 @@
     </div>
     
     <script>
-      var x = document.getElementById("js_demo").innerHTML;
 
-      console.log("Hello World.");
-      console.log(x);
+      function toggleContent() {
+        var b = document.getElementById("js_demo");
+        b.classList.toggle("reveal");
+      }
+
+      var datePg = document.getElementById("date_element");
+
+      function revealDate() {
+        datePg.innerHTML = Date();
+      }
+
+      revealDate();
 
     </script>
+    <script src="./js/countdown.js"></script>
   </body>
 </html>
