@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <meta charset="utf-8">
     <title>Foxtail Farms - Your New Favorite Produce.</title>
   </head>
@@ -39,10 +40,24 @@
       <main>
         <!-- Main Content Wrapper -->
 
+        <div class="about_button_wrapper">
+          <h2>Click here to find out about:</h2>
+          <button class="about_button">About</button>
+          <p class="about_text" id="js_demo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis soluta quod distinctio assumenda qui iste ipsam numquam? Aut, aliquid commodi in beatae dicta eligendi consequatur alias accusamus autem itaque!
+          </p>
+        </div>
+
       </main>
       <footer>
         <div class="footer_left">
-          <img src="./assets/logos/foxtail_logo_white.png" alt="">
+          <div class="footer_logo">
+            <img src="./assets/logos/foxtail_logo_black.png" alt="">
+          </div>
+          <div class="footer_text">
+            <h3>Foxtail Origins</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda autem omnis facilis perspiciatis ad dolores quod necessitatibus consectetur, odio unde nobis natus dolorum excepturi aliquid. Enim ullam dolores non! Culpa.</p>
+          </div>
         </div>
         <div class="footer_center">
 
@@ -60,7 +75,7 @@
               <li>Link5</li>
             </a>
           </ul>
-          
+
         </div>
         <div class="footer_right">
           <h3>Quick Links</h3>
@@ -82,6 +97,12 @@
 
     </div>
     
+    <script>
+      var x = document.getElementById("js_demo").innerHTML;
 
+      console.log("Hello World.");
+      console.log(x);
+
+    </script>
   </body>
 </html>
