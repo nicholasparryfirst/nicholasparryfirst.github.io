@@ -25,11 +25,19 @@ header {
   padding: 5px 25px;
   border-radius: 10px 10px 0px 0px;
   /* background: linear-gradient( 135deg, #f7ba91 20%, #e1a177 60%, transparent 60%); */
-  background-color: #6699cc;
-  background-image: url("../assets/photos/grassy_ass.png");
-  background-size: cover;
-  background-position: center -102px;
+  background-color: #8ec5fc;
+  background-image: url("../assets/photos/grassy_ass.png"), url("../assets/photos/clouds.jpg");
+  background-size: 100%, 150%;
+  background-position: center -15vw, center left;
   background-repeat: no-repeat;
+  transition:7.5s ease, 20s ease;
+  transition-property: background-size, background-position;
+}
+.zoom {
+  background-size: 110%, 150%;
+}
+.pan {
+  background-position: center -15vw, center right;
 }
 .header_left {
   font-family: "Lobster";
