@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <meta charset="utf-8">
@@ -15,7 +16,7 @@
         <div class="header_left">
           <h1>Foxtail Farms</h1>
         </div>
-        <div class="header_right">
+        <div class="header_right" data-aos="fade-left" >
           <img src="./assets/logos/foxtail_logo_plain@0.5x.png" alt="Foxtail Logo">
         </div>
       </header>
@@ -62,6 +63,12 @@
           <div class="internal_content">
             <h4>Hello World</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi error ducimus, vero veniam deleniti sequi ut illo enim. Est eveniet repellat ipsam molestias maiores distinctio cumque praesentium et fugiat.</p>
+          </div>
+
+          <div class="internal_content background_obj_wrapper">
+            <div class="background_obj img1"></div>
+            <div class="background_obj img2"></div>
+            <div class="background_obj img3"></div>
           </div>
 
           <div class="internal_content">
@@ -118,22 +125,30 @@
 
     </div>
     
-    <script>
 
+
+    <script>
+      // Toggler
       function toggleContent() {
         var b = document.getElementById("js_demo");
         b.classList.toggle("reveal");
       }
 
-      var datePg = document.getElementById("date_element");
+    </script>
+    <script>
+      // Countdown
+        var datePg = document.getElementById("date_element");
 
-      function revealDate() {
-        datePg.innerHTML = Date();
-      }
+        function revealDate() {
+          datePg.innerHTML = Date();
+        }
 
-      revealDate();
-
+        revealDate();
     </script>
     <script src="./js/countdown.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

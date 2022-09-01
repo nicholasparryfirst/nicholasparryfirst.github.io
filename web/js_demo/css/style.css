@@ -24,14 +24,19 @@ header {
   align-items: center;
   padding: 5px 25px;
   border-radius: 10px 10px 0px 0px;
-  background: linear-gradient( 135deg, #f7ba91 20%, #e1a177 60%, transparent 60%);
+  /* background: linear-gradient( 135deg, #f7ba91 20%, #e1a177 60%, transparent 60%); */
+  background-color: #6699cc;
+  background-image: url("../assets/photos/grassy_ass.png");
+  background-size: cover;
+  background-position: center -102px;
+  background-repeat: no-repeat;
 }
 .header_left {
   font-family: "Lobster";
   font-size: 14pt;
   background-clip: text;
   color:white;
-  text-shadow: 3px 3px 0px black;
+  text-shadow: 3px 3px 0px #e1a177;
   transition: 0.5s ease;
   transition-property: text-shadow;
 }
@@ -248,3 +253,29 @@ footer a {
   padding-left: 10px;
 }
 
+
+.background_obj_wrapper {
+  display:flex;
+}
+
+.background_obj {
+  flex:1;
+  height:200px;
+  background-color:red;
+  margin:10px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+.img1 {
+  background-image: url("../assets/photos/brooke-lark-YSA1IRkGAsg-unsplash.jpg");
+}
+
+.img2 {
+  background-image: url("../assets/photos/mordo-bilman-k7EjzzK1uhk-unsplash.jpg");
+}
+
+.img3{
+  background-image: url("../assets/photos/kristen-kaethler-lrfpHmuYj88-unsplash.jpg");
+}
