@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Website of author George R.R. Martin</title>
+    <meta charset="UTF-8">
+    <meta name='viewport'
+          content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Browser Tab Icon -->
+    <link rel="icon" href="../Assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @font-face {
+  font-family: 'Montaga';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montaga/v13/H4cnBX2Ml8rCkEO_4gEa7ZG6iqY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*{
+  font-family: Montaga;
+}
+
+body{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://www.georgerrmartin.com/theme/overall-bg.jpg), url(https://www.georgerrmartin.com/theme/content-bg.jpg);
+  background-position: center 790px, center 790px;
+  background-repeat: no-repeat, repeat;
+}
+
+h3 a{
+  font-family: Montaga;
+  text-decoration: none;
+  color: #204C73;
+}
+
+p{
+  color: #000;
+  padding-bottom: 20px;
+}
+
+p a{
+  text-decoration: underline;
+  color: #000;
+}
+
+p a:hover{
+  color: #000;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  height: 100vh;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 136px;
+  background-image: url(https://www.georgerrmartin.com/theme/header-bg.jpg);
+  background-color: grey;
+  background-position: center top;
+}
+
+.header-content{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 995px;
+  height: 102px;
+}
+
+
+.shield{
+  position: relative;
+   top: 15px;
+  background-image: url(https://i.imgur.com/LFQPWGl.gif);
+  width: 6.5%;
+  height: 75px;
+
+}
+
+.grrm{
+  background-image: url(https://georgerrmartin.com/wp-content/themes/GRRM/images/header-2.jpg);
+  width:65%;
+  height: 102px;
+}
+
+.social{
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.social img{
+  position: relative;
+  bottom: 45px;
+  left: 150px;
+  width: 50px;
+  height: 50px;
+}
+
+.textsearch{
+  position: relative;
+  width: 80px;
+  height: 20px;
+  left: 10px;
+}
+
+.hdr-menu{
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hdr-menu li{
+  display: inline-flex;
+  font-size: 16.5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 7px;
+}
+
+.hdr-menu li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.hdr-menu a:hover{
+  background-color: #fff;
+  padding: 6px;
+  position: relative;
+  top: 6px;
+}
+
+.main{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 960px;
+  height: 100vh;
+/*   background-color: #fff; */
+  margin-top: 142.5px;
+}
+
+.gallery{
+ margin: auto;
+ margin-top: 5px;
+ justify-content: center;
+ align-items: center;
+ width: 950px;
+ height: 300px;
+ background-color: #bbb;
+}
+
+.gallery img{
+  display: flex;
+  width: 950px;
+  height: 300px;
+  margin-top: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards{
+margin-top: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.cards article{
+width: 310px;
+height: 140px;
+background-color: green;
+margin-left: 5px;
+margin-right: 5px;
+border: 2px solid #aaa;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card1{
+  background-image: url(https://georgerrmartin.com/wp-content/uploads/2016/09/GRRM-SMALL-cocteau3.jpg);
+}
+
+.card2{
+  background-image: url(https://georgerrmartin.com/wp-content/uploads/2019/02/newsletter-home.png);
+}
+
+.card3{
+  background-image: url(https://georgerrmartin.com/wp-content/themes/GRRM/images/callout-sample-3.jpg);
+}
+
+.grid-item{
+  margin-top: 30px;
+  width: 500px;
+  height: 1300px;
+  padding: 30px;
+  background-color: #D9D9D9;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.footer{
+  margin-top: 30px;
+  width: 100%;
+  /* width: 999.98px;
+  height: 154.48px; */
+  justify-content: center;
+  align-items: center;
+  background-position: center bottom;
+  /* @media (max-width: 1024px) */
+  /* padding: 2px 0 120px 0; */
+}
+
+.footer-content{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 960px;
+}
+
+.footer-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px){
+  body {
+
+  }
+
+  .header{
+    display: flex;
+  }
+  .grrm{
+  display: flex;
+    max-width: 75%;
+    width: 75%;
+    height: auto;
+    object-fit: contain;
+  }
+  .shield{
+    display: flex;
+    max-width: 10%;
+    width: 10%;
+    height: auto;
+    object-fit: contain;
+  }
+  /* .Banner-Images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  } */
+
+.social{
+  max-width: 10%;
+  width: 10%;
+  height: auto;
+  object-fit: contain;
+  align-items: center;
+  }
+  /* form{
+    margin-top: 0;
+  } */
+  .hdr-menu{
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.grid-wrapper {
+  display:flex;
+}
+.aside {
+  width:33%;
+}
+.grid-item {
+  width:66%;
+}
+    </style>
+  </head> 
+  <body>
+    <div class="container">
+        <header class="header">
+          <section class="header-content">
+          <div class='shield'></div>
+          <div class='grrm'></div>
+          <div class='social'>
+            <a href="#"><img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/facebook-overall.jpg" alt=""></a>
+            <a href="#"><img src="https://georgerrmartin.com/wp-content/themes/GRRM/images/twitter-overall.jpg" alt=""></a>
+            <a href="#"><img src="https://www.georgerrmartin.com/theme/app-overall.jpg" alt=""></a>
+
+      <input type="text" name="s" class="textsearch" placeholder="Search">
+          </div>
+            </section>
+
+
+
+      <ul class="hdr-menu">
+        <li><a href="https://georgerrmartin.com/">HOME</a></li>
+        <li><a href="https://georgerrmartin.com/notablog/">NOT A BLOG</a></li>
+        <li><a href="https://georgerrmartin.com/all-books/">BOOKS</a></li>
+        <li><a href="https://georgerrmartin.com/for-fans/">FOR FANS</a></li>
+        <li><a href="https://georgerrmartin.com/category/news/">NEWS</a></li>
+        <li><a href="https://georgerrmartin.com/merchandise/">MERCHANDISE</a></li>
+       </ul>
+     </header>
+
+        <main class="main">
+
+          <section class="gallery">
+          <img src="../Assets/GOT_Carousel.GIF" alt="GOT_Carousel.GIF">
+          </section>
+          <section class="cards">
+            <article class="card1"></article>
+            <article class="card2"></article>
+            <article class="card3"></article>
+          </section>
+          <div class="grid-wrapper">
+            <div class="aside">
+              <div class="img" style="height:250px; background-color: lime;"></div>
+            </div>
+            <div class="grid-content">
+              
+            </div>
+            <!-- <section class="grid-item">
+              <img src="../Assets/current-blogs.png" alt="Current_Blogs" width= 500 id="Current-Blogs"></a>
+              <h3><a href="https://georgerrmartin.com/notablog/2022/08/21/the-dragons-are-here-2/">The Dragons Are Here</a></h3>
+              <p>Tonight’s the night. It has been three years since GAME OF THRONES wound up its run on HBO… and way way longer since we began the development of the successor series that eventually became HOUSE OF THE DRAGON. You have… <a href="https://georgerrmartin.com/notablog/2022/08/21/the-dragons-are-here-2/">Read more » </a></p>
+              <h3><a href="https://georgerrmartin.com/notablog/2022/08/15/let-his-voice-be-heard/">Let His Voice Be Heard</a></h3>
+              <p>Let me be clear. I do not know Salman Rushdie. Oh, I know OF him, of course. He has been one of the world’s most celebrated authors for decades now. I have seen him on television, read about him in… <a href="https://georgerrmartin.com/notablog/2022/08/15/let-his-voice-be-heard/">Read more » </a></p>
+              <h3><a href="https://georgerrmartin.com/notablog/2022/08/03/house-of-the-dragon-jcc-premier/">HOUSE OF THE DRAGON JCC PREMIER</a></h3>
+              <p>Beastly Books and the Jean Cocteau Cinema are hosting a special screening event of HOUSE OF THE DRAGON: We’re SUPER excited to be hosting this event in conjunction with HBO on Thursday August 18th and our schedule is 4pm Wristbands available… <a href="https://georgerrmartin.com/notablog/2022/08/03/house-of-the-dragon-jcc-premier/">Read more » </a></p>
+              <h3><a href="https://georgerrmartin.com/notablog/2022/08/02/full-house-is-here/">FULL HOUSE Is Here!</a></h3>
+              <p>Aces Assemble! You jokers can come too. We have a new book coming for you TODAY. Our friends at Tor will be releasing FULL HOUSE in hardcover. FULL HOUSE is the thirty-first volume in the overall Wild Cards series, which… <a href="https://georgerrmartin.com/notablog/2022/08/02/full-house-is-here/">Read more » </a></p>
+              <h3><a href="https://georgerrmartin.com/notablog/2022/07/31/covid-update/">COVID UPDATE</a></h3>
+              <p>An Update from LA THIS MESSAGE HAS BEEN BROUGHT TO YOU BY THE MINIONS OF FEVRE RIVER <a href="https://georgerrmartin.com/notablog/2022/07/31/covid-update/">Read more » </a></p>
+              <h3><a href="https://georgerrmartin.com/notablog/2022/07/14/san-diego-here-i-come/">San Diego, Here I Come</a></h3>
+              <p>Yes, it’s true. I will be heading to San Diego for Comicon at the end of the month, for the first time in… ah… a bunch of years. That’s not news to most of you, I know. There have… <a href="https://georgerrmartin.com/notablog/2022/07/14/san-diego-here-i-come/">Read more » </a></p>
+              <h3><a href="https://georgerrmartin.com/notablog/2022/07/12/re-release-of-fire-and-blood//">FIRE & BLOOD Is Back!</a></h3>
+              <p>If you missed Archmaester Gyldayn’s history of the Targaryen dynasty the first time around, have no fear. Our friends at Bantam Spectra are bringing it back.  On sale TODAY in both trade paperback and mass market, with new tie-in cover… <a href="https://georgerrmartin.com/notablog/2022/07/12/re-release-of-fire-and-blood/">Read more » </a></p>
+              <a href="https://georgerrmartin.com/notablog/"><img src="../Assets/got_not_a_blog.png" alt="Not_A_Blog" width= 280 id="Not-A-Blog"></a>
+            </section>   -->
+          </div>
+      <footer class="footer">
+
+          <img class="footer-image" src="../Assets/got_footer.jpg" alt="GOT_Carousel.GIF" width="960" height="140">
+          <p class="footer-text">&copy 2022 George R.R. Martin. All Rights reserved.</p>
+
+      </footer>
+      </main>
+
+    </div>
+
+
+    </body>
+    </html>
