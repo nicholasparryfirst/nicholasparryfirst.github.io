@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  margin:0;
+
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+  padding:20px;
+  background-color: blanchedalmond;
+  color:#4E6151;
+}
+.header_left {
+  font-family: "Roboto Slab";
+  font-weight: bolder;
+}
+.header_right {
+ font-size: 3em; 
+}
+
+/* Navigation Element */
+nav {
+  position:sticky;
+  top:0px;
+  background-color: #4E6151;
+}
+nav ul {
+  display:flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin:0;
+  justify-content: space-between;
+  width:100%;
+}
+nav li {
+  flex:1;
+  text-align: center;
+  display:flex;
+  align-items: center;
+}
+nav a {
+  padding:10px 20px;
+  text-align: center;
+  color:blanchedalmond;
+  text-decoration: none;
+  width:100%;
+}
+nav a:hover {
+  background-color: #72BDA3;
+}
+
+#site-hero {
+  height:500px;
+  background-image: url("../assets/monstara.jpg");
+  background-size: cover;
+}
+
+footer {
+  display:flex;
+  background-color: #4E6151;
+}
+
+footer a {
+  color:blanchedalmond;
+}

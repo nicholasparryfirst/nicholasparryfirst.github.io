@@ -4,11 +4,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>The World's Worst Calculator</title>
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+      div#calculator_wrapper {
+        width: 60%;
+        margin:10% auto;
+        text-align: center;
+        background-color: bisque;
+        border-radius: 15px;
+        padding: 50px;
+        color:maroon;
+      }
+      #calculator_wrapper h3 {
+        font-size: 30pt;
+      }
+      #calculator_wrapper button {
+        padding:5px;
+        background-color: maroon;
+        color:blanchedalmond;
+        border-radius: 5px;
+
+      }
+
+      h1#my-class {
+        background-color: pink;;
+      }
+    </style>
   </head>
   <body>
+    <div id="my-class">
+      <h1>Hello World</h1>
+    </div>
+
+    <div id="calculator_wrapper">
+      <h3>The World's Worst Calculator</h3>
+      <div class="button_wrapper">
+        <button onclick="firstCalc()">3 + 4</button>
+        <button onclick="secondCalc()">5 * 8</button>
+        <button onclick="thirdCalc()">150 * 30</button>
+      </div>
+      <br>      
+      <p id="result"></p>
+
+    </div>
+
+    <div id="modal">
+      <div id="second_worst_wrapper">
+
+
+        <?php
+        echo "HEllo World";
+      ?>
+
+      </div>  
+    </div>
 
 
 
+      <script>
+
+        const output = document.getElementById("result");
+        console.log(output);
+
+        function firstCalc() {
+          let a = 30;
+          let b = 40;
+          let sum = a + b;
+
+          console.log(sum);
+          output.innerHTML = sum;
+        }
+        function secondCalc() {
+          var a = 5;
+          var b = 8;
+          var product = a * b;
+
+          output.innerHTML = product;
+        }
+
+        function thirdCalc() {
+          var firstNum = 150;
+          var b = 30;
+          var product = firstNum * b;
+
+          output.innerHTML = "The product of " + firstNum + " and " + b + " is " + product;
+        }
+
+      </script>
   </body>
 </html>
