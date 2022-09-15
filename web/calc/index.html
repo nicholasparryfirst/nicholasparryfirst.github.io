@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <section class="calculator_wrapper">
+      <h1>THE WORLD'S WORST CALCULATOR</h1>
+      <h4>Pick a calculation:</h4>
+
+      <div class="button_wrapper">
+        <button onclick="aAddTwoPlusTwo()">2 + 2</button>
+        <button onclick="aTenDividedByFive()">10 / 5</button>
+        <button onclick="aBigOlNumber(999, 45)">999 * 45</button>
+      </div>
+
+      <p id="result"></p>
+    </section>
+
+    <section class="second_worst_calculator">
+      <h2>The Second Worst Calculator</h2>
+      <div class="selection_wrapper">
+          <label for="FirstNumber">First Number:</label>
+          <input type="text" name="FirstNumber" id="FirstNumber">
+          <br>
+          <label for="SecondNumber">Second Number:</label>
+          <input type="text" name="SecondNumber" id="SecondNumber">
+          <br>
+          <button onclick="multiplyTwoNumbers()">GO!</button>
+      </div>
+    </section>
+
+    <script src="./js/calc.js"></script>
+  </body>
+</html>
